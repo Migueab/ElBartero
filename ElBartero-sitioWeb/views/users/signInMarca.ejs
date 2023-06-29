@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <%- include('../partials/head', {title}); %>
+</head>
+<body>
+    <header>
+        <%- include('../partials/header') %>
+    </header>
+    <main class="main">
+
+        <section class="seccion-uno">
+
+            <div>
+                <h2>Inicio de sesion</h2>
+                <img src="/images/logo-sin-fondo.png" alt="">
+                <i class="fa-solid fa-industry"></i>
+            </div>
+            <div>
+                
+                <% errors.forEach(elemento=>{ %>
+                    
+                    <li>
+                    <p>*<%= elemento.msg%></p>
+                    </li>
+                    <%});%>
+            </div>
+
+
+            <form action='/signinmarca' method="post">
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" value="<%= values.email %>">
+                </div>
+                <div>
+                    <label for="password">Contraseña</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div>
+                    <label for="rememberme">Recordame</label>
+                    <input type="checkbox" name="rememberme" id="rememberme">
+                </div>
+                <div>
+                    <button type="submit">Continuar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <%- include('../partials/footer') %>
+    </footer>
+</body>
+</html>

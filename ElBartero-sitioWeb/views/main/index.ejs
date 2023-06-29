@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include ( '../partials/head' ) %>
+        <title>
+            <%= title %>
+        </title>
+</head>
+
+
+<body>
+
+    <header>
+
+        <%- include( '../partials/header' ) %>
+
+    </header>
+    <main class="main">
+
+        <section class="seccion-uno">
+
+            <article class="articulo-input">
+                <label for="buscador-principal"></label>
+                <input class="input-search" type="search" name="buscador-principal" placeholder=" search" >
+                <button type="submit" class="boton-lupa-busqueda"><i class="fa-solid fa-magnifying-glass"></i></button>
+        
+            </article>
+
+            <article class="articulo-filter">
+                
+                <div class="drop-down">
+                    <button class="dropbutton-filter"><i class="fa-solid fa-sort-down"></i></button>            
+                  
+                    <div class="dropdown-content-filter">
+
+                        <div class="checkbox-mercados">
+                            <label class="label-mercado-comercios" for="buscador-principal">Mercado de Comercios</label>
+                            <input type="checkbox" name="Mercado-comercios" id="buscador-principal">
+                            <label class="label-mercado-usuarios" for="buscador-principal">Mercado de Usuarios</label>
+                            <input type="checkbox" name="Mercado-usuarios" id="buscador-principal">
+                        </div>
+                        <div class="categoria-mercado-usuarios">
+                            <label class="label-oro" for="buscador-principal">Oro</label>
+                            <input type="checkbox" name="Mercado-usuarios" id="buscador-principal">
+                            <label class="label-plata" for="buscador-principal">Plata</label>
+                            <input type="checkbox" name="Mercado-usuarios" id="buscador-principal">
+                            <label class="label-bronce" for="buscador-principal">Bronce</label>
+                            <input type="checkbox" name="Mercado-usuarios" id="buscador-principal">
+                        </div>
+
+                    </div>
+                </div>
+                
+            </article>
+        </section>
+
+        <section class="seccion-dos">
+            <article>
+
+                <h4>CATEGORIAS</h4>
+
+                <div class="cards-list">
+
+                    <div class="card-uno">
+                        <div>
+                            <a href="" class="card_image"></a>
+                        </div>
+                        <div class="card_title title-black">
+                            <p>Celulares</p>
+                        </div>
+                    </div>
+
+                    <div class="card-dos">
+                        <div>
+                            <a href="" class="card_image"></a>
+                        </div>
+
+                        <div class="card_title title-black">
+                            <p>Televisores</p>
+                        </div>
+                    </div>
+
+                    <div class="card-tres">
+                        <div>
+                            <a href="" class="card_image"></a>
+                        </div>
+                        <div class="card_title">
+                            <p>Ropa</p>
+                        </div>
+                    </div>
+
+                    <div class="card-cuatro">
+                        <div>
+                           <a href="" class="card_image"></a>
+                        </div>
+
+                        <div class="card_title title-black">
+
+                            <p>Electrodomesticos</p>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+        </section>
+
+        <section class="seccion-tres">
+            <article>
+                <h4> Categoria por rubros</h4>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <%- include( '../partials/footer' ) %>
+    </footer>
+</body>
+
+</html>

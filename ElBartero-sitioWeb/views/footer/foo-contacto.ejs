@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include ( '../partials/head' ) %>
+    <title> <%= title %></title>
+</head>
+
+<body>
+    <header>
+
+        <%- include( '../partials/header' ) %>
+
+    </header>
+
+    <main class="main">
+
+        <section class="seccion-uno-contacto">
+
+            <article class="opc-contacto-info">
+                <h4 class="opc-titular">Contacto</h4>
+                <div class="opc-contacto-telefono">
+                    <p>telefono</p>
+                </div>
+                <div class="opc-contacto-mail">
+                    <p>mail</p>
+                </div>
+                <div class="opc-contacto-direccion">
+                    <p>direccion</p>
+                </div>
+                <div class="opc-contacto-opciones">
+                    <p>opciones</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="seccion-dos-contacto">
+
+            <article class="opc-contacto-mensaje-datos">
+
+                <h4 class="opc-titular">Enviar un mensaje</h4>
+                <div class="opc-datos-usuario-mensaje">
+                    <label for="usar-datos-usuario">Usar datos del usuario</label>
+                    <input type="checkbox" id="usar-datos-usuario" name="usar-datos-usuario">
+                </div>
+                <div class="opc-mensaje-informacion">
+                    <form action="/contacto" method="get">
+                        <div class="opc-informacion-mensaje-single">
+                            <label for="contacto-mensaje-nombre">Nombre </label>
+                            <input type="text" name="contacto-mensaje-nombre" id="contacto-mensaje-nombre">
+                        </div>
+                        <div class="opc-informacion-mensaje-single">
+                            <label for="contacto-mensaje-apellido">Apellido </label>
+                            <input type="text" name="contacto-mensaje-apellido" id="contacto-mensaje-apellido">
+                        </div>
+                        <div class="opc-informacion-mensaje-single">
+                            <label for="contacto-mensaje-telefono">Telefono </label>
+                            <input type="text" name="contacto-mensaje-telefono" id="contacto-mensaje-telefono">
+                        </div>
+                        <div class="opc-informacion-mensaje-single">
+                            <label for="contacto-mensaje-domicilio">Domicilio </label>
+                            <input type="text" name="contacto-mensaje-domicilio" id="contacto-mensaje-domicilio">
+                        </div>
+                        <div class="opc-informacion-mensaje-single">
+                            <label for="contacto-mensaje-provincia">Provincia </label>
+                            <input type="text" name="contacto-mensaje-provincia" id="contacto-mensaje-provincia">
+                        </div>
+                        <div class="opc-informacion-mensaje-single">
+                            <label for="contacto-mensaje-email">Email </label>
+                            <input type="text" name="contacto-mensaje-email" id="contacto-mensaje-email">
+                        </div>
+                        <div class="opc-informacion-mensaje-sigle">
+                            <p>Motivo</p>
+                            <select name="contacto-mensaje-motivo">
+                                <option></option>
+                                <option value="solicitud">Solicitud</option>
+                                <option></option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+            </article>
+            <article class="opc-contacto-mensaje-texto">
+                <div class="opc-mensaje">
+                    <p>Mensaje</p>
+                    <textarea class="opc-mensaje-configuracion" name="contacto-mensaje" id="contacto-mensaje"
+                        maxlength="200" required></textarea>
+                    <button class="opc-mensaje-button" type="submit">Enviar</button>
+                </div>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <%- include( '../partials/footer' ) %>
+    </footer>
+
+</body>
+
+</html>

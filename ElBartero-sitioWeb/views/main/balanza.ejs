@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include ( '../partials/head' ) %>
+    <title> <%= title %></title>
+    </head>
+
+<body>
+    <header>
+    
+        <%- include( '../partials/header') %>
+    
+        </header>
+
+    <main class="main">
+
+        <section class="seccion-uno-balanza">
+
+            <article class="on-page-balanza-listas-guardadas">
+                <p>Balanzas guardadas</p>
+                <i class="fa-solid fa-caret-down"></i>
+            </article>
+            <article class="on-page-balanza-listas-guardadas">
+                <p>Instructivo Balanza</p>
+            </article>
+
+            <article class="opb-comando">
+
+                <div class="opb-estado-publico-privado">
+
+                </div>
+                <div class="opb-balanza-nombre">
+                    <p>La balanza</p>
+                    <p>Nombre de la balanza</p>
+                    <p>info nº votos segun categorias</p>
+                </div>
+
+                <div class="opb-balanza-invitacion">
+
+                </div>
+
+            </article>
+        </section>
+
+        <section class="seccion-dos-balanza">
+
+            <article class="opb-balanza">
+
+                <div class="opb-canasta-icono">
+                    <div class="opb-canasta-consulta-oferta">
+                        <p>Canasta consulta</p>
+                    </div>
+
+                    <div class="opb-icono">
+                        <img class="opb-icono-balanza" src="/images/Balanza-icono.png">
+                    </div>
+
+                    <div class="opb-canasta-consulta-oferta">
+                        Canasta ofertante
+                    </div>
+                </div>
+
+                <div class="opb-canasta-izq-der">
+
+                    <div class="opb-canasta-representada">
+                        <div class="opb-oferta-canasta-uno"></div>
+                    </div>
+
+                    <div class="opb-icono-bartero-flechas">
+                        <i class="fa-solid fa-left-long"></i>
+                        <img class="imagen-logo-sinNombre" src="/images/Logo-sinNombre-06.png">
+                        <i class="fa-solid fa-left-long fa-rotate-180"></i>
+                    </div>
+                    <div class="opb-canasta-representada">
+                        <div class="opb-oferta-canasta-dos"></div>
+
+                    </div>
+
+                </div>
+
+                <div class="opb-negociacion">
+
+                    <div class="opb-negociacion-consulta">
+                        <div class="opb-negociacion-porcentaje">
+                            <p>%</p>
+                        </div>
+                        <div class="opb-n-o-single">
+                            <p class="opb-n-o-s-texto">Oferta Nº1</p>
+                        </div>
+                        <div class="opb-n-o-single">
+                            <p class="opb-n-o-s-texto">Oferta Nº2</p>
+                        </div>
+                        <div class="opb-n-o-single">
+                            <p class="opb-n-o-s-texto">Oferta Nº3</p>
+                        </div>
+                    </div>
+
+                    <div class="opb-negociacion-tablero">
+                        <p class="opb-negociacion-titular">Tablero de negociacion</p>
+
+                        <div class="opb-negociacion-oferta-single">
+                            <div class="opb-n-t-single-oferta">
+                                <p class="opb-n-t-s-texto">O1.</p>
+                            </div>
+                            <div class="opb-n-t-s-barra"></div>
+                            <div class="opb-n-t-single-oferta">
+                                <p class="opb-n-t-s-texto">CO1.</p>
+                            </div>
+                        </div>
+                    
+                        <div class="opb-negociacion-oferta-single">
+                            <div class="opb-n-t-single-oferta">
+                                <p class="opb-n-t-s-texto">CO1.</p>
+                            </div>
+                            <div class="opb-n-t-s-barra"></div>
+                            <div class="opb-n-t-single-oferta">
+                                <p class="opb-n-t-s-texto">O1.</p>
+                            </div>
+                        </div>
+
+                        <div class="opb-negociacion-oferta-single">
+                            <div class="opb-n-t-single-oferta">
+                                <p class="opb-n-t-s-texto">O1.</p>
+                            </div>
+                            <div class="opb-n-t-s-barra"></div>
+                            <div class="opb-n-t-single-oferta">
+                                <p class="opb-n-t-s-texto">CO1.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="opb-negociacion-oferta">
+                        <div class="opb-negociacion-porcentaje">
+                            <p>%</p>
+                        </div>
+
+
+                        <div class="opb-n-o-single">
+                            <p class="opb-n-o-s-texto">Oferta Nº1</p>
+                        </div>
+                        <div class="opb-n-o-single">
+                            <p class="opb-n-o-s-texto">Oferta Nº2</p>
+                        </div>
+                        <div class="opb-n-o-single">
+                            <p class="opb-n-o-s-texto">Oferta Nº3</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="opb-negociacion-desplegar">
+                    <p class="opb-desplegar-contenido">desplegar tablero de negociacion</p>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+                
+            </article>
+            <article class="opb-negociacion-usuarios-pizarra">
+                <div class="opb-negociacion-usuarios-pizzarra-izq">
+                <p class="opb-negociacion-ususarios-listado-titulo">Listado ofertante</p>
+                <div class="opb-negociacion-usuarios-listado">
+                    <p>Crear listado</p>
+                </div>
+            </div>
+            <div class="opb-negociacion-usuarios-pizzarra-der">
+                <p class="opb-negociacion-ususarios-listado-titulo">Listado consultante</p>
+                <div class="opb-negociacion-usuarios-listado">
+                    <p>Crear listado</p>
+                </div>
+                </div>
+                <div class="opb-negociacion-usuarios-comentarios-destacados">
+                    <p>Comentarios destacados</p>
+                </div>
+                <div class="opb-negociacion-desplegar">
+                    <p class="opb-desplegar-contenido">desplegar </p>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+            </article>
+
+            <article class="opb-negociacion-usuarios">
+
+                <div class="opb-negociacion-chat-usuarios">
+                    <div class="opb-negociacion-usuario-consulta">
+                        <i class="fa-solid fa-user"></i>
+                        <p class="opb-negociacion-ususario-nombre">Nombre</p>
+                    </div>
+                    <div class="opb-negociaciion-imagen-bartero">
+                        <img class="imagen-logo-sinNombre" src="/images/Logo-sinNombre-06.png">
+                    </div>
+                    
+                    <div class="opb-negociacion-usuario-oferta">
+                        <i class="fa-solid fa-user"></i>
+                        <p class="opb-negociacion-ususario-nombre">Nombre</p>
+                    </div>
+                    </div>
+
+                <div class="opb-negociacion-usuario-chat">
+
+                    <div class="opb-chat-comentarios-destacados">
+                        <p class="opb-chat-c-texto">Chat de negociacion</p>
+                    </div>
+
+                    <div class="opb-chat-publico-o-privado">
+                        <p>Chat</p>
+                        <label>publico</label>
+                        <input type="radio" name="balanza-chat" value="publico">
+                        <label>privado</label>
+                        <input type="radio" name="balanza-chat" value="privado">
+                    </div>
+
+                    <div class="opb-chat-privado-publico"></div>
+                    <div class="opb-chat-privado-publico-subir-comentario">Subir un comentario destacado</div>
+                    <textarea class="opb-chat"></textarea>
+                </div>
+
+            </article>
+
+        </section>
+
+        <section class="seccion-tres-balanza">
+
+            <article class="opb-informacion">
+                <h2>Informacion de la negociacion</h2>
+                <div class="opb-negociacion-cronologia">
+                    <div class="opb-negociacion-cronologia-historia">
+                        Historia de la negociacion
+                    </div>
+                    <div class="opb-negociacion-cronologia-informacion">
+                        Informacion de la negociacion
+                    </div>
+                </div>
+
+                <div class="opb-usuarios-votacion">
+                    <div class="opb-usuarios-resultados-calificacion">Ver valoracion de canastas</div>
+                    <div class="opb-usuarios-resultados-votacion">
+                    <p class="opb-usuarios-resultados-texto">Ver valoracion de la Blanza:</p>
+                    <div class="opb-votacion-single">
+
+                    </div>
+                    <div class="opb-votacion-single"></div>
+                    <div class="opb-votacion-single"></div>
+                    <div class="opb-votacion-single"></div>
+                    <div class="opb-votacion-single"></div>
+                    <div class="opb-votacion-single"></div>
+                    <div>
+                </div>
+
+            </article>
+
+        </section>
+
+        <section class="seccion-cuatro-balanza">
+
+            <article class="opb-usuarios-votan">
+                <h2>Votar negociacion</h2>
+
+                <div class="opb-usuarios-calificar">
+                    Calificar la negociacion
+                </div>
+                <div class="opb-usuarios-calificar">Votar canastas</div>
+                <div class="opb-usuarios-calificar">Votar balanza</div>
+                
+            </article>
+            
+        </section>
+        <section class="seccion-cinco-balanza">
+
+            <article class="opb-usuarios-otros">
+        <div class="opb-usuarios-comentarios"> 
+            <div class="opb-usuarios-comentarios-foto-ejemplo"></div>
+            <p class="opb-usuarios-comentarios-texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, optio?</p>
+        </div>
+        <div class="opb-usuarios-comentarios"> 
+            <div class="opb-usuarios-comentarios-foto-ejemplo"></div>
+            <p class="opb-usuarios-comentarios-texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, optio?</p>
+        </div>
+        <div class="opb-usuarios-comentarios"> 
+            <div class="opb-usuarios-comentarios-foto-ejemplo"></div>
+            <p class="opb-usuarios-comentarios-texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, optio?</p>
+        </div>
+        <div class="opb-usuarios-comentarios-chat">
+            <div class="opb-usuarios-comentarios-foto-ejemplo"></div>
+            <textarea class="opb-usuarios-comentarios-chat-mensaje"></textarea>
+            <button type="submit">Enviar</button>
+        </div>
+
+            </article>
+
+        </section>
+
+    </main>
+    <footer>
+        <%- include( '../partials/footer') %>
+        </footer>
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <%- include ('../partials/head', {title}) %>
+  
+</head>
+
+<body>
+    <header>
+
+        <%- include( '../partials/header' ) %>
+
+    </header>
+
+    <main class="main">
+
+        <section class="seccion-uno">
+
+            <article class="on-page-mercado-comercios">
+
+                <h4 class="opmc-titulo-primero">Mercado de comercios</h4>
+
+                <a class="opmc-titulo-segundo" href="/mercadocomercialmercaderias">Acceder al mercado</a>
+
+                <div class="opmc-input-label">
+                    <label for="mercado-comercios">Buscar en el mercado de comercios</label>
+                    <input class="input-search-comercios" type="search" name="mercado-comercios">
+                </div>
+
+            </article>
+
+
+        </section>
+        <section class="seccion-dos">
+
+            <article class="buscar-por-categoria-on-page-comercios">
+
+                <h4 class="opmc-titulares-article">Buscar por categorias</h4>
+                <div class="on-page-comercios-on-article-categorias">
+
+                    <div class="opmc-buscar-categorias-iconos">
+                        <i class="fa-solid fa-laptop"></i>
+                        <i class="fa-solid fa-mobile-button"></i>
+                        <i class="fa-regular fa-washing-machine"></i>
+                    </div>
+
+                </div>
+            </article>
+
+        </section>
+
+        <section class="seccion-tres">
+
+            <!-- la seccion tres se clasifica por filas y columnas, para mejor entendimiento -->
+
+            <article class="on-page-comercios-ofertas-seccion-tres">
+
+                <h4 class="opmc-titulares-article">Ofertas del dia</h4>
+
+                <div class="opmc-muestra-mercaderia-f1-c1">
+
+                    <p class="opmc-muestra-titulo">Descripcion del producto</p>
+
+                    <div class="opmc-muestra-mercaderia-foto">
+
+                    </div>
+
+                    <div class="opmc-muestra-mercaderia-choosewindow">
+
+                        <button class="opmc-boton-compra" type="button" type="button"
+                            onclick="location.href='/comprarmercaderia';">Comprar</button>
+
+                        <button class="opmc-boton-ver" type="button"
+                            onclick="location.href='/mercaderiaenexhibiciondetalle';">Ver</button>
+
+                        <button class="opmc-boton-al-almacen" type="button">Cargar al almacen</button>
+                    </div>
+
+                </div>
+
+                <!-- A partir de 480 muestra dos -->
+
+                <div class="opmc-muestra-mercaderia-f1-c2">
+
+                    <p class="opmc-muestra-titulo">Descripcion del producto</p>
+
+                    <div class="opmc-muestra-mercaderia-foto">
+
+                    </div>
+
+                    <div class="opmc-muestra-mercaderia-choosewindow">
+                        <button class="opmc-boton-compra" type="button" type="button"
+                            onclick="location.href='/comprarmercaderia';">Comprar</button>
+
+                        <button class="opmc-boton-ver" type="button"
+                            onclick="location.href='/:id/mercaderiaenexhibiciondetalle';">Ver</button>
+
+                        <button class="opmc-boton-al-almacen" type="button">Cargar al almacen</button>
+                    </div>
+
+                </div>
+
+                <!-- segunda fila : sf -->
+
+                <div class="opmc-muestra-mercaderia-f2-c1">
+
+                    <p class="opmc-muestra-titulo">Descripcion del producto</p>
+
+                    <div class="opmc-muestra-mercaderia-foto">
+
+                    </div>
+
+                    <div class="opmc-muestra-mercaderia-choosewindow">
+                        <button class="opmc-boton-compra" type="button" type="button"
+                            onclick="location.href='/comprarmercaderia';">Comprar</button>
+
+                        <button class="opmc-boton-ver" type="button"
+                            onclick="location.href='/mercaderiaenexhibiciondetalle';">Ver</button>
+
+                        <button class="opmc-boton-al-almacen" type="button">Cargar al almacen</button>
+                    </div>
+                </div>
+
+                <div class="opmc-muestra-mercaderia-f2-c2">
+
+
+                    <p class="opmc-muestra-titulo">Descripcion del producto</p>
+
+                    <div class="opmc-muestra-mercaderia-foto">
+
+                    </div>
+
+                    <div class="opmc-muestra-mercaderia-choosewindow">
+                        <button class="opmc-boton-compra" type="button" type="button"
+                            onclick="location.href='/comprarmercaderia';">Comprar</button>
+
+                        <button class="opmc-boton-ver" type="button"
+                            onclick="location.href='mercaderiaenexhibiciondetalle';">Ver</button>
+
+                        <button class="opmc-boton-al-almacen" type="button">Cargar al almacen</button>
+                    </div>
+
+
+                </div>
+
+            </article>
+
+        </section>
+
+        <section class="seccion-cuatro">
+            <article class="on-page-comercios-ofertas-seccion-cuatro">
+                <h4 class="opmc-titulares-article"> Ofertas </h4>
+                <div class="opmc-f1-c1">
+                    <p>Paga con tu banco</p>
+                </div>
+                <div class="opmc-f2-c1">
+                    <p>Aprovecha este descuento</p>
+                </div>
+
+
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <%- include( '../partials/footer' ) %>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include ( '../partials/head' ) %>
+    <title> <%= title %></title>
+    </head>
+
+<body>
+    <header>
+    
+        <%- include( '../partials/header') %>
+    
+        </header>
+    <main class="main">
+
+        <section class="seccion-uno-contratacion">
+
+            <article class="opcont-contratacion-info">
+                <h4 class="opcont-titular">Contratacion</h4>
+                <p class="opcont-parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet dolorem sapiente porro tenetur saepe non asperiores assumenda debitis consectetur placeat molestias esse repudiandae, odio reprehenderit atque iure! Libero, quis corrupti?<br><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam quae culpa soluta aliquam vitae, labore tempora corporis quis, dolore ab nisi perspiciatis laudantium similique obcaecati. Nisi ratione omnis nulla facilis!</p>
+            </article>
+        </section>
+        <section class="seccion-dos-contratacion">
+            <article class="opcont-solicitud">
+                <h4 class="opcont-titular">Enviar una solicitud</h4>
+                <p class="opcont-parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident numquam molestiae similique! Nostrum, vel id. Voluptatibus accusamus recusandae repudiandae vitae, aliquid quos saepe minus magni asperiores rerum tempore. Nesciunt, repudiandae!</p>
+                <div class="opcont-enviar-solicitud">
+                    <label for="enviar-solicitud-contratacion">Enviar una solicitud</label>
+                    <input type="checkbox" name="solicituddecontratacion" id="enviar-solicitud-contratacion">
+                </div>
+            </article>   
+         
+        </section>
+        <section class="seccion-tres-contratacion">
+            <article class="opcont-enviar-infomacion">
+                <form action="/solicitudcontratacion" method="get">
+                <h4 class="opcont-titular">Solicitud de contratacion</h4>
+
+                <div class="opcont-datos-usuario">
+                    <label for="usar-datos-usuario-contratacion">Usar datos del usuario</label>
+                    <input type="checkbox" id="usar-datos-usuario-contratacion" name="usar-datos-usuario-contratacion">
+                </div>
+
+                <div class="opcont-informacion">
+
+                    <div class="opcont-informacion-single">
+                        <label for="contratacion-nombre">Nombre</label>
+                        <input type="text" name="contratacion-nombre" id="contratacion-nombre">
+                    </div>
+                    <div class="opcont-informacion-single">
+                        <label for="contratacion-apellido">Apellido </label>
+                        <input type="text" name="contratacion-apellido" id="contratacion-apellido">
+                    </div>
+                    <div class="opcont-informacion-single">
+                        <label for="contratacion-telefono">Telefono </label>
+                        <input type="text" name="contratacion-telefono" id="contratacion-telefono">
+                    </div>
+                    <div class="opcont-informacion-single">
+                        <label for="contratacion-domicilio">Domicilio </label>
+                        <input type="text" name="contratacion-domicilio" id="contratacion-telefono">
+                    </div>
+                    <div class="opcont-informacion-single">
+                        <label for="contratacion-provincia">Provincia </label>
+                        <input type="text" name="contratacion-provincia" id="contratacion-provincia">
+                    </div>
+                    <div class="opcont-informacion-single">
+                        <label for="contratacion-email">Email </label>
+                        <input type="text" name="contratacion-email" id="contratacion-email">
+                    </div>
+                    <div class="opcont-informacion-single">
+
+                        <p>Razon de contratacion</p>
+                            <select name="contratacion-informacion">
+                                <option></option>
+                                <option value="pasatiempo">Pasatiempo</option>
+                                <option value="quiere">Quiero trabajar en este sitio</option>
+                                <option value="desempleado">Estoy desempleado</option>
+                                <option value="buscaTrabajo">Busco trabajo</option>
+                                <option value="sirveParaEsto">Sirvo para esto</option>
+                            </select>
+                    </div>
+                    <div class="opcont-informacion-single">
+                        <label for="file-informacion-contratacion">Subir archivo</label>
+                        <br>
+                        <input type="file" name="file-informacion-contratacion" id="file-informacion-contratacion" accept=".jpg , .png">
+                    </div> 
+                    <div class="opcont-informacion-single">
+                        <label for="checkbox-contratacion-mensaje">Dejar un mensaje</label>
+                        <input type="checkbox" id="checkbox-contratacion-mensaje" name="checkbox-contratacion-mensaje">
+                        <textarea name="comentario-contratacion" id="checkbox-contratacion-mensaje">Escribe tu mensaje</textarea>
+                    </div>
+                </div>
+                </form>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <%- include( '../partials/footer') %>
+        </footer>
+        
+</body>
+
+
+</html>

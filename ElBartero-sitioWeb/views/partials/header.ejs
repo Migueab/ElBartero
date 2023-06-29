@@ -1,0 +1,77 @@
+
+
+<header class="header">
+
+    <div>
+        <a href="/"><img class="logo-ElBartero" src="/images/El-Bartero.png" alt="Imagen"></a>
+    </div>
+    
+    <!-- el icono de la balanza aparece dos veces, esto es por el cambio de uso a partir de 769 -->
+    <a><img class="balanza-icono" src="/images/Balanza-icono.png"></a>
+
+    <div class="balanza-icono-contenido-despelgable">
+
+        <a><img class="balanza-icono" src="/images/Balanza-icono.png"></a>
+
+        <div class="contenido-desplegable">
+
+            <a href="/instructivo"><img class="opb-iconos-desplegables" src="/images/icono-instructivo.png" alt=""></a>
+            <a href="/mercadocomercial"><img class="opb-iconos-desplegables" src="/images/icono-mercado-comercial.png" alt=""></a>
+            <a href="/mercadousuarios"><img class="opb-iconos-desplegables" src="/images/icono-mercado-usuarios.png" alt=""></a>
+            <a href="/balanza"><img class="opb-iconos-desplegables" src="/images/Icono-Balanza-color.png" alt=""></a>
+            <a href="/subasta"><img class="opb-iconos-desplegables" src="/images/Icono-Subasta-color.png" alt=""></a>
+            <a href="/valoracion"><img class="opb-iconos-desplegables" src="/images/Icono-Valoracion-color.png" alt=""></a>
+            <a href="/canasta"><img class="opb-iconos-desplegables" src="/images/Icono-Canasta-color.png" alt=""></a>
+
+        </div>
+        
+    </div>
+    <section class="seccion-user">
+
+        <%  if(locals.isLogged || locals.isMarcaLogged){ %>
+
+            <% if (locals.isLogged) { %>
+                <div class="user-option">
+                    <a href="/useracount"><i class="fa-solid fa-user"></i></a>
+                    <a class="descripcion-user" href="/useracount">User</a>
+                </div>
+            <% } %>
+            <div class="sign-out-option">
+                <a href="/logout"><i class="fa-solid fa-right-from-bracket"></i></a>
+                <a class="descripcion-sign-out" href="/logout" >Sign out</a>
+            </div>
+            <%  } else { %>
+                
+                <div class="sign-up-option">
+                    <a href="/signup"><i class="fa-solid fa-user-plus"></i></a>
+                    <a class="descripcion-sign-up" href="/signup">Sing up</a>
+                </div>
+                <div class="sign-in-option">
+                    <a href="/signin"><i class="fa-solid fa-door-closed"></i></a>
+                    <a class="descripcion-sign-in" href="/signin">Sing in</a>
+                </div>
+
+                <%  };  %>
+                
+    </section>
+
+    <nav class="seccion-viñetas">
+
+        <a class="instructivo" href="/instructivo">Instructivo</a>
+
+        <div class="redirige-mercados">
+            <button class="dropbtn">Ir al mercado</button>
+            <div class="dropdown-content">
+                <a href="/mercadocomercial">Mercado comercial</a>
+                <a href="/mercadousuarios">Mercado de usuarios</a>
+            </div>
+        </div>
+        
+        <a class="redirige-balanza" href="/balanza">Ir a la Balanza</a>
+        <a class="redirige-subasta" href="/subasta">Ir a la Subasta</a>
+        <a class="redirige-valoracion" href="/valoracion">Ir a la Valoracion</a>
+        <a class="redirige-canasta" href="/canasta">Ir a la Canasta</a>
+
+    </nav>
+
+</header>

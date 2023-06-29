@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include ('../partials/head' , {title}); %>
+</head>
+<body>
+    <header>
+        <%- include ('../partials/header') %>
+    </header>
+    <main>
+        <section class="seccion-uno-registracion-marcas">
+
+            <div class="oprm-title-icon-article">
+                <h2 class="oprm-title">Registracion de marcas</h2>
+                <i class="fa-solid fa-business-time"></i>
+            </div>
+
+            <ul class="oprm-errors">
+
+                <% if(errors.length >0){ %>
+                    <p class="opr-errors-alert">Por favor revise el formulario a llenar:</p>
+                    <%}%>
+
+                <% errors.forEach(elemento=>{ %>
+
+                   <li> <%= elemento.msg%></li>
+
+                    <%});%>
+            </ul>
+
+            <form action='/signupmarca' method="post" class="on-page-marca-registracion">
+
+               <div class="oprm-form-single">
+                   <label for="name" class="opr-labels">Nombre comercial:</label>
+                   <input type="text" name="name" id="name" value="<%= values.name %>" class="opr-inputs">
+               </div>
+               <div class="oprm-form-single">
+                   <label for="phonenumber" class="oprm-labels">Telefono de contacto:</label>
+                   <input type="number" name="phonenumber" id="phonenumber" values="<%= values.phonenumber %>" class="opr-inputs">
+               </div>
+               <div class="oprm-form-single">
+                   <label for="email" class="oprm-labels">Email:</label>
+                   <input type="email" name="email" id="email" value="<%= values.email %>" class="opr-inputs">
+               </div>
+               <div class="oprm-form-single">
+                   <label for="password" class="oprm-labels">Contraseña:</label>
+                   <input type="password" name="password" id="password" class="opr-inputs">
+               </div>
+               <div class="oprm-form-single">
+                   <label for="confirmpassword" class="oprm-labels">Confirmar contraseña:</label>
+                   <input type="password" name="confirmpassword" id="confirmpassword" class="opr-inputs">
+               </div>
+               <div class="oprm-form-single">
+                   <label for="razonsocial" class="oprm-labels">Razon social</label>
+                   <input type="text" name="razonsocial" id="razonsocial" value="<%= values.razonsocial %>" class="opr-inputs">
+               </div>
+               <div class="oprm-form-single">
+                   <label for="birthfoundation" class="oprm-labels">Fecha de constitucion</label>
+                   <input type="date" name="birthfoundation" id="birthfoundation" min="1800" max="today" class="opr-inputs">
+               </div class="oprm-form-single">
+               <div class="oprm-form-single">
+                   <label for="address" class="oprm-labels">Domicilio social</label>
+                   <input type="text" name="address" id="address" class="opr-inputs">
+               </div class="oprm-form-single">
+               <div class="oprm-form-single">
+                   <label for="postalcode" class="oprm-labels">Codigo Postal</label>
+                   <input type="tel" name="postalcode" id="postalcode" class="opr-inputs">
+               </div>
+               <div class="oprm-form-single">
+                   <label for="location" class="oprm-labels">Localidad</label>
+                   <input type="tel" name="location" id="location" class="opr-inputs">
+               </div>
+               <div class="oprm-form-single">
+                   <label for="state" class="oprm-labels">Provincia</label>
+                   <input type="tel" name="state" id="state" class="opr-inputs">
+               </div>
+               <div class="oprm-form-single">
+                   <label for="" class="oprm-labels">Pais</label>
+                   <input type="tel" name="country" id="country" class="opr-inputs">
+               </div>
+               <div class="oprm-button">
+                <button type="submit" class="oprm-button-single">Enviar</button>
+               </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <%- include ('../partials/footer')%>
+    </footer>
+</body>
+</html>

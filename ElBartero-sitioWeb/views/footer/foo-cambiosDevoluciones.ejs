@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <%- include ( '../partials/head' ) %>
+    <title> <%= title %></title>
+    </head>
+
+<body>
+
+    <header>
+    
+        <%- include( '../partials/header') %>
+    
+        </header>
+
+    <main class="main">
+
+        <section class="seccion-uno-cambios-devoluciones">
+
+            <article class="on-page-cambios-devoluciones">
+
+                <h4 class="opcd-titular">Cambios y Devoluciones</h4>
+                <p class="opcd-fecha">Fecha del dia</p>
+                <div class="opcd-iniciar-cambio-devolucion">
+                    <div class="opcd-iniciar-cambio">
+                        <p>Cambio</p>
+                        <label for="cambio">Inicar cambio</label>
+                        <input class="opcd-checkbox-cambio" type="checkbox" name="cambio" id="cambio">
+                    </div>
+                    <div class="opcd-iniciar-devolucion">
+                        <p>Devolucion</p>
+                        <label for="devolucion">Inicar devolucion</label>
+                        <input class="opcd-checkbox-devolucion" type="checkbox" name="devolucion" id="devolucion">
+                    </div>
+                </div>
+            </article>
+
+        </section>
+
+        <section class="seccion-dos-cambios-devoluciones">
+
+            <article class="opcd-motivos">
+                <p class="opcd-motivos-titular">Motivo</p>
+                <select class="opcd-motivos-select" name="motivodelcambioodevolucion">
+                    <option value="ya-compro-otro-producto">Ya compre otro producto</option>
+                    <option value="encontro-algo-mejor">Encontré algo mejor</option>
+                    <option value="otros">otros</option>
+                </select>
+                <p class="opcd-motivos-comentario">Comentario</p>
+                <textarea class="opcd-motivos-texto" name="cambio-devolucion-comentario"
+                    id="cambio-devolucion-comentario"></textarea>
+                <button class="opcd-motivos-texto-button" type="submit">Enviar</button>
+            </article>
+
+            <article class="opcd-transacciones">
+                <p class="opcd-transacciones-titular">Transacciones realizadas</p>
+                <label for="buscar-transaccion-para-cambio-devolucion">Buscar</label>
+                <input class="opcd-input-buscar-transaccion" type="search" name="buscar-transaccion-cambio-devolucion" id="buscar-transaccion-para-cambio-devolucion" placeholder=" Buscar transaccion">
+                <div class="opcd-transacciones-muestra-datos">
+                    <div class="opcd-transaccion-ejemplo">
+                        <p>Informacion de la transaccion</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="opcd-terminos-aceptar">
+
+                <div class="opcd-checkbox-hecho-cambios-devoluciones">
+
+                    <label for="constancia-hecho-cambios-devoluciones">Tengo y dejo constancia de que las transcciones seleccionadas seran
+                        canceladas.<br>De esta manera acepto y aclaro como canceladas las anteriores</label>
+                    <input type="checkbox" name="constancia-hecho-cambios-devoluciones" id="constancia-hecho-cambios-devoluciones">
+                </div>
+
+                <div class="opcd-checkbox-cargos-cambios-devoluciones">
+
+                    <label for="constancia-cargos-cambios-devoluciones">De hacerse cargo como responsable de cancelaciones y pagos necesarios
+                        para efectuar las cancelaciones</label>
+                    <input type="checkbox" name="constancia-cargos-cambios-devoluciones" id="constancia-cargos-cambios-devoluciones">
+
+                </div>
+
+                <div class="opcd-checkbox-condiciones-cambios-devoluciones">
+
+                    <label for="constancia-condiciones-cambios-devoluciones">Aceptar condiciones</label>
+                    <input type="checkbox" name="constancia-condiciones-cambios-devoluciones" id="constancia-condiciones-cambios-devoluciones">
+               
+                </div>
+                <button class="opcd-button-submit" type="submit">Aceptar</button>
+
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <%- include( '../partials/footer') %>
+        </footer>
+</body>
+
+</html>

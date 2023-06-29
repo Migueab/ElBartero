@@ -1,0 +1,63 @@
+
+Usamos esta guia, para avisar de los trabajos que fueron realizados.
+Se busca conceptualizar los pasos relizados, tanto como bloques nuevos de secciones o articulos.
+Tambien podemos nombrar selectores.
+
+Antes:
+Iniciamos el trabajo html, css, el Bartero.
+Creamos la carpeta con archivos, Node.js +Express.
+Creamos archivos html, con nombre de sus respectivas paginas.
+Creamos archivo styles. Este es el que abastece a todo el sitio.
+
+Comenzamos a hacer el indice/home.
+Comenzamos a hacer el mercado de comercios.
+Comenzamos a hacer el mercado de usuarios.
+Comenzamos a hacer la cuenta de Usuario. Carrito/Almacen/deposito/galpon.etc.
+Comenzamos a hacer la pagina La balanza.
+Comenzamos a hacer una pagina a donde redirige para ver el producto. detalle. Y poder comprarlo.
+
+Otros html. por hacer o considerar como necesarios para el funcionamiento del sitio.
+
+
+10/05 : Actualizamos el indice con caracteristicas en seccion dos, Categoria de mercado.
+
+11/05: Se crearon los temas y redirecciones del footer.
+
+15/05 : Empezamos sprint tres, orden de carpetas
+
+Sin fecha:
+Las tareas de organizacion de carpetas fueron abarcados. MVC.
+Se crearon los controladores y archivos de ruteo.
+Se hicieron los cambios a ejs.
+Instalcion de modulos.
+
+Se crearon los formularios y rutas segun destinos.
+
+Crud: se hicieron los archivos de funciones para productos y usuarios.
+Se creo la seudoBase de datos json. Se vincularon los archivos para el correcto funcionamiento.
+
+09/06 : Se corrijio el multer. Se pueden subir archivos imagenes a la creacion de Mercaderias. Para usuarios y para comerciales.
+
+11/06 : Se viene la entrega de Sprint Cuatro. Falta trabajo en el css y html.
+        Se creo un nuevo fomulario para usuarios de marcas.
+
+12/06:  Trabajo en el index.
+        Reordenar el footer.
+:       Se trabajo soblre los middlewares.
+        Avisos de Validaciones. Express validator.
+:       Se trabajo el css y el color en toda la pagina.
+:       Se esta trabajando sobre el login.
+:       Complicaciones en cuanto el msg. No lee el "msg".
+:       FAlta session. Falta cookies.(recordame).
+        
+
+26/06:  La devolucion del Sprint Tres fue buena, falto retro y trello.
+        Se viene el Sprint Cinco.
+        En este Sprint hay que entregar por cuenta propia.
+        Trello y Retrospectiva.
+        FALTA HACER LA CONDICION DE LA CONTRASEÑA, Confirm password.
+        Y que no se vea en la base de datos.
+
+** Entrega Sprint Cinco 28/06. **
+
+

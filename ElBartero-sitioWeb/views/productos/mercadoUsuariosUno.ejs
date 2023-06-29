@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head' , {title}) %>
+   
+</head>
+<body>
+
+    <header> 
+        <%- include('../partials/header')  %>
+    </header>
+
+    <main>
+        <section class="seccion-uno-opmu1">
+            <article class="on-page-mercado-usuarios-uno-listado">
+        
+        <h2 class="opmu1-titulo">Mercaderias</h2>
+
+        <%mercaderia.forEach(elemento=>{%>
+            <div class="on-page-mercado-usuarios-uno-cart">
+            <div class="opmu1-contiene-imagen">
+            <img class="opmu1-imagen" src="<%= elemento.img %>" alt="Imagen">
+            </div>
+            <div class="opmu1-title-price">
+
+            <p class="opmu1-title">
+                <%=elemento.title%>
+            </p>
+            
+            <p class="opmu1-price">
+                <%=elemento.price%>
+            </p>
+            </div>
+            
+            <div class="opmu1-buttons">
+            <button onclick="location.href='/<%=elemento.id%>/mercaderiausuariosdetalle';" class="opmu1-buttons-single">Ver detealles de la mercaderia</button>
+            <button onclick="location.href='/<%= elemento.id%>/';" class="opmu1-buttons-single">Valorar</button>
+            <button onclick="location.href='/<%= elemento.id%>/';" class="opmu1-buttons-single">Cargar al almacen</button>
+            <button onclick="location.href='/<%= elemento.id%>/';" class="opmu1-buttons-single">Invitar a iniciar una negociacion</button>
+            <button onclick="location.href='/<%= elemento.id%>/comprarmercaderia';" class="opmu1-buttons-single">Comprar</button>
+            </div>
+            </div>
+            <%})%>
+        </article>
+        </section>
+
+    </main>
+        <footer>
+            <%- include('../partials/footer') %>
+            </footer>
+</body>
+</html>

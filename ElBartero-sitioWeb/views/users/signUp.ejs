@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head' , {title});%>
+    <title><%= title %></title>
+</head>
+
+<body>
+    <header>
+        <%- include('../partials/header') %>
+    </header>
+    <main class="main">
+
+        <section class="seccion-uno-registracion">
+
+            <article class="opr-title-icon-article">
+
+                <div class="opr-title">
+                    <h2>Registracion:</h2>
+                </div>
+                <div class="opr-user-icon">
+                    <i class="fa-solid fa-user-large"></i>
+                </div>
+            </article>
+            
+            <div>
+                <ul class="opr-errors">
+                    
+                    <% if(errors.length >0){ %>
+                        <p class="opr-errors-alert">Por favor revise el formulario a llenar:</p>
+                        <%}%>
+
+
+                    <% errors.forEach(elemento=>{ %>
+                    
+                        <li>
+                        <p>*<%= elemento.msg%></p>
+                        </li>
+    
+                        <%});%>
+
+                        <% if( locals.errors && errors.email){ %>
+
+                            <% errors.forEach(elemento=>{ %>
+                                
+                                <p>*<%=  elemento.email.msg %></p>
+                                <p>*<%= elemento.password.msg %></p>
+                                <%});%>
+                        <% } %>
+
+                </ul>
+            </div>
+
+            <form action='/signup' method="post" class="op-register-form">
+
+                <div>
+                <div class="opr-form-single">
+                    <label for="name" class="opr-labels">Nombre:</label>
+                    <input type="text" name="name" id="name" value="<%= values.name %>" class="opr-inputs">
+                </div>
+                <div class="opr-form-single">
+                    <label for="surname" class="opr-labels">Apellido:</label>
+                    <input type="text" name="surname" id="surname" value="<%= values.surname %>" class="opr-inputs">
+                </div>
+                <div class="opr-form-single">
+                    <label for="email" class="opr-labels">Correo electronico:</label>
+                    <input type="email" name="email" id="email" value="<%= values.email %>" class="opr-inputs">
+                </div>
+                <div class="opr-form-single">
+                    <label for="password" class="opr-labels">Contraseña:</label>
+                    <input type="password" name="password" id="password" class="opr-inputs">
+                </div>
+                <div class="opr-form-single" >
+                    <label for="confirmpassword" class="opr-labels">Confirmar contraseña:</label>
+                    <input type="password" name="confirmpassword" id="confirmpassword" class="opr-inputs">
+                </div>
+
+                </div>
+                <div class="opr-button">
+                    <button type="submit" class="opr-button-single">Crear usuario de primer grado</button>
+                </div>
+
+                <div>
+
+                    <div class="opr-form-single">
+                        <label for="birthdate" class="opr-labels">Fecha de nacimiento:</label>
+                        <input type="date" name="birthdate" id="birthdate" class="opr-inputs">
+                    </div>
+                    <div class="opr-form-single">
+                        <label for="phonenumber" class="opr-labels">Telefono:</label>
+                        <input type="number" name="phonenumber" id="phonenumber" class="opr-inputs">
+                    </div>
+                    <div class="opr-form-single">
+                        <label for="country" class="opr-labels">Pais:</label>
+                        <input type="text" name="country" id="country" class="opr-inputs">
+                    </div>
+                    <div class="opr-form-single">
+                        <label for="state" class="opr-labels">Provincia:</label>
+                        <input type="text" name="state" id="state" class="opr-inputs">
+                    </div>
+                    <div class="opr-form-single">
+                        <label for="address" class="opr-labels">Direccion:</label>
+                        <input type="text" name="address" id="address" class="opr-inputs">
+                    </div>
+                </div>
+                <div class="opr-button">
+                    <button type="submit" class="opr-button-single">Crear un usuario de segundo grado</button>
+                </div>
+
+                <div class="opr-banc-acounts">
+                    <div>
+                        <label for="creditcard" class="opr-labels">Tarjeta numero:</label>
+                        <input type="number" name="creditcard" id="creditcard" class="opr-inputs">
+                    </div>
+                    <div>
+                        <label for="creditcardowner" class="opr-labels">Titular:</label>
+                        <input type="text" name="creditcardowner" id="creditcardowner" class="opr-inputs">
+                    </div>
+                    <div>
+                        <label for="expirancy" class="opr-labels">Vencimiento:</label>
+                        <input type="date" name="expirancy" id="expirancy" class="opr-inputs">
+                    </div>
+                </div>
+                <div class="opr-banc-acounts">
+                    <div>
+                        <label for="bancacount" class="opr-labels">Cuenta asociada:</label>
+                        <input type="number" name="bancacount" id="bancacount" class="opr-inputs">
+                    </div>
+                    <div>
+                        <label for="bancacountowner" class="opr-labels">Titular:</label>
+                        <input type="text" name="bancacountowner" id="bancacountowner" class="opr-inputs">
+                    </div>
+                    <div>
+                        <label for="bancexpirancy" class="opr-labels">Vencimiento:</label>
+                        <input type="date" name="bancexpirancy" id="bancexpirancy" class="opr-inputs">
+                    </div>
+                </div>
+                <div class="opr-button">
+                    <button type="submit" class="opr-button-single">Crear cuenta de tercer grado</button>
+                </div>
+            </form>
+
+        </section>
+    </main>
+    <footer>
+        <%- include('../partials/footer') %>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head' , {title}) %>
+
+</head>
+
+<body>
+    <header>
+        <%- include ('../partials/header')%>
+    </header>
+    <main>
+        <section class="seccion-uno-opmc1">
+            
+            
+            <article class="on-page-mercado-comercial-uno-listado">
+                <h2 class="opmc1-titulo">Mercaderias</h2>
+
+                <% mercaderiasMarcas.forEach(elemento=> {%>
+                    <div class="on-page-mercado-comercial-uno-cart">
+                        <div class="opmc1-contiene-imagen">
+                        <img class="opmc1-imagen" src="<%=elemento.img%>" alt="Imagen  ">
+                        </div>
+                        <div class="opmc1-title-price">
+
+                            <p class="opmc1-title">
+                                <%=elemento.title %>
+                            </p>
+                            <p class="opmc1-price">
+                                <%=elemento.price %>
+                            </p>
+                            <p><%= elemento.description %></p>
+
+                        </div>
+
+                        <div class="opmc1-buttons">
+                        
+                        <button class="opmc1-buttons-single" onclick="location.href='/<%= elemento.id%>/mercaderiaenexhibiciondetalle';">Ver detalles de la
+                                mercaderia</button>
+                        <button onclick="location.href='/<%= elemento.id%>/';" class="opmc1-buttons-single">Cargar al almacen</button>
+                        <button onclick="location.href='/<%= elemento.id%>/';" class="opmc1-buttons-single">Señalar mercaderia</button>
+                        <button onclick="location.href='/<%= elemento.id%>/comprarmercaderia';" class="opmc1-buttons-single">Comprar</button>
+
+                        </div>
+                    </div>
+                    <% }); %>
+                </article>
+
+        </section>
+
+    </main>
+    <footer>
+        <%- include ('../partials/footer')%>
+    </footer>
+</body>
+
+</html>

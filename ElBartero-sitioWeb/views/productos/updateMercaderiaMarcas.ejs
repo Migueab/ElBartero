@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head' , {title}) %>
+   
+</head>
+<body>  
+    <header>
+         <%- include('../partials/header')  %>
+    </header>
+    <main>
+        <section class="seccion-uno">
+
+        <form action="/mercaderiaenexhibiciondetalle/<%=mercaderiasMarcas.id%>/update?_method=put" method="post" enctype="multipart/form-data">
+            <label for="">Nombre</label>
+            <input type="text" name="title" value="<%=mercaderiasMarcas.title%>">
+            <label for="">Precio</label>
+            <input type="number" name="price" value="<%=mercaderiasMarcas.price%>">
+            <label for="img">Imagen</label>
+            <input type="file" name="img" id="img" value="<%=mercaderiasMarcas.img%>">
+
+            <input type="submit" value="Guardar cambios">
+        </form>
+    </section>
+        </main>
+        <footer>
+            <%- include('../partials/footer') %>
+            </footer>
+</body>
+</html>

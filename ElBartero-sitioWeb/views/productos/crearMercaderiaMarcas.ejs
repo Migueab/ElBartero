@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include ('../partials/head' , {title}) %>
+ 
+</head>
+<body>
+    <header>
+        <%- include('../partials/header') %>
+    </header>
+    <main>
+        <section class="seccion-uno">
+            <h2>Creacion de mercaderia marcas</h2>
+
+            <ul>
+                <% errors.forEach(elemento=>{ %>
+
+                   <li class="op-crear-mercaderia-marca"> <%= elemento.msg%></li>
+
+                    <%});%>
+
+            </ul>
+
+            <form action="/mercadocomercialmercaderias" method="post" enctype="multipart/form-data" class="on-page-crear-mercaderia-marca-formulario">
+
+                <label for="">Nombre</label>
+                <input type="text" name="title">
+                <label for="">Precio</label>
+                <input type="number" name="price">
+                <label for="">Descripcion</label>
+                <input type="text" name="description">
+                <label for="">Año aproximado</label>
+                <input type="number" name="year" id="" min="1900" max="2099" placeholder="2023">
+                <label for="img">Subir Foto</label>
+                <input type="file" name="img" id="img" accept=".jpeg, .jpg , .png">
+                <p>Escribe un comentario:</p>
+                <textarea name="" id="" cols="20" rows="4"></textarea>
+
+                <input type="submit">
+            </form>
+
+        </section>
+    
+    </main>
+        <footer>
+            <%- include('../partials/footer')  %>
+        </footer>
+</body>
+
+</html>

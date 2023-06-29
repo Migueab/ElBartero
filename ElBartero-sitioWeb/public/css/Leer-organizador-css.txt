@@ -1,0 +1,67 @@
+
+Buenas,
+
+Esto es para explicar como ordenamos los selectores en css.
+
+Todo el documento esta referenciado con media quieries.
+
+Mq. 0
+Mq. 480
+Mq. 769
+Mq. 1279
+
+
+1- Todas las paginas tienen el Header y footer compartidos.
+
+    Por esto encontraremos pocos cambios en el Header y el footer. 
+    En su mayoria en el body. De todas las Media Quieries.
+
+    * La mayoria de los cambios se encontraran en los Bodys de cada Media Quierie.
+
+.........
+
+Entonces, vamos a encontrar.
+
+Head, body, footer.
+
+......
+
+En comentarios abrimos y cerramos cada pagina. Indicando.
+Por esto sabremos en que pagina encontrar los selectores.
+Estos abren y cierran con nombre de la pagina indicada.
+represetamos esto como On PAge "pagina"
+
+.....
+
+Para reseptar orden y propociones.
+1- ordenamos los selectores principales.
+Ejemplo. Si encontramos en una pagina 3 selectores como padres contenedores.
+Estos apareceran primero.
+
+Luego, las caracteristicas dentro de cada selectore.
+
+Entonces.
+Ejemplo.
+
+En una pagina. contamos con 3 padres contenedores.
+Estos aparecen primero
+Selector uno , slector dos, selector tres.
+
+Luego, segun los comentarios.Que indican unicamente.
+Respecto a Selector 1.
+representamos los selectores internos de dicho padre.
+
+Selector 1 ( comentado)
+caja 1,
+caja 2,
+caja 3.
+
+Y reiteramos haciendo lo mismo.
+comentando la caja 1..
+titulo dentro de caja1
+texto dentro de caja2
+caja dentro de caja3
+
+....
+Las paginas abren y cierran con su nombre.
+

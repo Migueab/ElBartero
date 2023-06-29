@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head' , {title}); %>
+</head>
+
+<body>
+    <header>
+        <%- include('../partials/header' ) %>
+    </header>
+    <main class="main">
+        <section class="seccion-uno-sign-in">
+
+            <div class="opsi-title-icon">
+                <h2 class="opsi-title">Inicio de sesión</h2>
+                <div>
+                    <img src="/images/logo-sin-fondo.png" alt="Imagen">
+                </div>
+            </div>
+
+            <div class="opsi-errors-list">
+                <% if(errors.length>0){ %>
+                    <p class="opr-errors-alert">Por favor revise el formulario a llenar:</p>
+                    <%}%>
+
+                        <% errors.forEach(elemento=>{ %>
+
+                            <li class="op-sign-in-errors">
+                                <p>*<%= elemento.msg%>
+                                </p>
+                            </li>
+                            <%});%>
+
+            </div>
+
+            <form action="/signin" method="post" class="opsi-register-form">
+                <div class="opsi-register-single">
+                    <label for="email" class="opsi-label">Email</label>
+                    <input type="email" name="email" id="email" value="<%= values.email %>" class="opsi-input">
+                </div>
+                <div class="opsi-register-single">
+                    <label for="password" class="opsi-label">Contraseña</label>
+                    <input type="password" name="password" id="password" class="opsi-input">
+                </div>
+                <div class="opsi-register-single">
+                    <label for="rememberme" class="opsi-label">Recordame</label>
+                    <input type="checkbox" name="rememberme" id="rememberme" class="opsi-input">
+                </div>
+                <div class="opsi-register-single">
+                    <button type="submit" class="opsi-button">Continuar</button>
+                </div>
+
+            </form>
+
+            <div>
+                <p>¿Olvido la contraseña?</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <%- include('../partials/footer' ) %>
+    </footer>
+</body>
+
+</html>

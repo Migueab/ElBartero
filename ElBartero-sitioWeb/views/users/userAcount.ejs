@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include ( '../partials/head' , {title} ); %>
+
+</head>
+
+<body>
+
+    <header>
+
+        <%- include( '../partials/header' ) %>
+
+    </header>
+
+    <main class="main">
+
+        <section class="seccion-uno-cuenta-usuario">
+
+            <article class="on-page-cuenta-usuario-cuadro">
+
+                <div class="opcu-cuadro-usuario-uno">
+
+                    <div class="opcu-user-imagen">
+                        <i class="fa-regular fa-circle-user"></i>
+                   <!--      <label for=""></label>
+                        <input type="file"> -->
+                    </div>
+                    
+                    <div class="opcu-user-nombre">
+                        <%=  user.name  %>
+                        <%=  user.surname  %>
+                    </div>
+
+                    <div class="opcu-user-comentario">
+                        <textarea class="opcu-user-comentario-textarea"></textarea>
+                    </div>
+                </div>
+
+                <div class="opcu-cuadro-usuario-dos">
+
+                    <div class="opcu-iconos-negociaciones">
+                        <!-- esta imagen es solo para menos de 769 -->
+                        <!-- Se deberia desplegar un menu con los otros iconos. -->
+                        <div class="opcu-balanza-icono-contenido-despelgable">
+                            <a><img class="opcu-iconos-choosewindow" src="/images/Icono-Balanza-color.png"></a>
+                            <div class="opcu-contenido-desplegable">
+                                <a href="/balanza"><img class="opcu-iconos-desplegables"
+                                        src="/images/Icono-Balanza-color.png" alt=""></a>
+                                <a href="subasta"><img class="opcu-iconos-desplegables"
+                                        src="/images/Icono-Subasta-color.png" alt=""></a>
+                                <a href="/valoracion"><img class="opcu-iconos-desplegables"
+                                        src="/images/Icono-Valoracion-color.png" alt=""></a>
+                                <a href="/canasta"><img class="opcu-iconos-desplegables"
+                                        src="/images/Icono-Canasta-color.png" alt=""></a>
+                            </div>
+                        </div>
+
+                        <!-- hasta aca es solo para menos de 769 -->
+
+                        <div class="opcu-negociaciones-cuadro-dos-iconos">
+                            <img class="iconos-negociaciones-Balanza-color" alt="imagen"
+                                src="/images/Icono-Balanza-color.png">
+                            <img class="iconos-negociaciones-Subasta-color" href="/subasta"
+                                src="/images/Icono-Subasta-color.png">
+                        </div>
+
+                        <div class="opcu-negociaciones-cuadro-dos-iconos">
+                            <img class="iconos-negociaciones-Valoracion-color" href="/valoracion"
+                                src="/images/Icono-Valoracion-color.png">
+                            <img class="iconos-negociaciones-Canasta-color" href="/canasta"
+                                src="/images/Icono-Canasta-color.png">
+                        </div>
+
+                    </div>
+
+                    <div class="opcu-disponibilidad">
+                        <div class="opcu-radio-baja">
+                            <label for="usuario-disponibilidad"></label>
+                            <input type="radio" name="usuario-disponibilidad" id="usuario-disponibilidad-baja"
+                                style="width: 8px;">
+                        </div>
+                        <div class="opcu-radio-media">
+                            <label for="usuario-disponibilidad-media"></label>
+                            <input type="radio" name="usuario-disponibilidad" id="usuario-disponibilidad-media"
+                                style="width: 8px;">
+                        </div>
+                        <div class="opcu-radio-alta">
+                            <label for="usuario-disponibilidad-alta"></label>
+                            <input type="radio" name="usuario-disponibilidad" id="usuario-disponibilidad-alta"
+                                value="#1BF023" style="width: 8px;">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="opcu-cuadro-usuario-tres">
+                    <a href="/crearmercaderia" class="opcu-opciones-listado-configuracion">Crear una nueva mercaderia</a>
+                    <a href="/editarperfil" class="opcu-opciones-listado-configuracion">Editar pefil del usuario</a>
+                </div>
+
+
+            </article>
+
+        </section>
+
+        <section class="seccion-dos">
+
+            <article class="opcu-almacen">
+
+                <div class="opcu-almacen-titular">
+                    <p class="opcu-almacen-titulo">Almacen : nombre del almacen </p>
+                    <p class="opcu-almacen-control">Control</p>
+                </div>
+
+                <div class="opcu-almacen-lista">
+                    <div>
+                        <p class="opcu-almacen-lista-text">Lista, nombre. con caracteristicas. segun
+                            configuracion, mercaderias ,canastas</p>
+                    </div>
+                    <div class="opcu-almacen-lista-mercaderia">
+                        <div class="opcu-almacen-lista-mercaderia-item">
+                            Foto
+                        </div>
+                        <div class="opcu-almacen-lista-info">
+                            <button class="opcu-lista-info" onclick="location.href='';">Ver detalles</button>
+                        </div>
+                        <div class="opcu-almacen-lista-opciones">
+                            <button class="opcu-lista-button-single" onclick="location.href='';">Enviar al
+                                mercado</button>
+                            <button class="opcu-lista-button-single" onclick="location.href='';">Modificar
+                                mercaderia</button>
+                            <button class="opcu-lista-button-single" onclick="location.href='';">Eliminar esta
+                                mercaderia</button>
+                        </div>
+                    </div>
+                    <div class="on-page-almacen-lista-scroll">
+                        <div class="on-page-almacen-lista-inerscroll"></div>
+                    </div>
+
+                </div>
+
+                <div class="opcu-almacen-desplegar-seccion">
+                    <p>Desplegar almacen</p>
+                </div>
+
+            </article>
+
+        </section>
+
+        <section class="seccion-tres">
+
+            <article class="opcu-negociaciones">
+
+                <div class="opcu-negociaciones-titular">
+                    <p opcu-negociaciones-titulo>Negociaciones : nombre de la negociacion </p>
+                    <p class="opcu-negociaciones-control">Control</p>
+                </div>
+
+                <div class="opcu-negociaciones-lista">
+                    <p class="opcu-negociaciones-lista-text">Lista con nombre. con caracteristicas de que contiene.
+                        segun
+                        configuracion</p>
+                    <div class="opcu-negociaciones-lista-mercaderia">
+                        <div class="opcu-negociaciones-lista-mercaderia-item"></div>
+                    </div>
+
+                    <div class="on-page-negociaciones-lista-scroll">
+                        <div class="on-page-negociaciones-lista-inerscroll"></div>
+                    </div>
+
+                </div>
+
+                <div class="opcu-negociaciones-desplegar-seccion">
+                    <p>Desplegar negociacion</p>
+                </div>
+
+            </article>
+
+        </section>
+
+        <section class="seccion-cuatro">
+
+            <article class="opcu-de-interes">
+
+                <div class="opcu-en-observacion">
+                    <div class="opcu-en-observacion-titular">
+                        <p class="opcu-en-observacion-titulo">Seleccionados como de interes
+                        </p>
+                        <p class="opcu-en-observacion-control">Control</p>
+                    </div>
+
+                    <div class="opcu-en-observacion-lista">
+                        <p class="opcu-en-observacion-lista-text">Lista con nombre. con caracteristicas de que contiene.
+                            segun
+                            configuracion</p>
+                        <div class="opcu-en-observacion-lista-mercaderia">
+                            <div class="opcu-en-observacion-lista-mercaderia-item"></div>
+                        </div>
+
+                        <div class="on-page-en-observacion-lista-scroll">
+                            <div class="on-page-en-observacion-lista-inerscroll"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="opcu-en-observacion-desplegar-seccion">
+                        <p>Desplegar lista de en observacion</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="opcu-tracking">
+           
+                    <div class="opcu-en-tracking-titular">
+                        <p class="opcu-en-tracking-titulo">En tracking, adquiridos en transito</p>
+                        <p class="opcu-en-tracking-control">Control</p>
+                    </div>
+
+                    <div class="opcu-en-tracking-lista">
+                        <p class="opcu-en-tracking-lista-text">Lista con nombre. con caracteristicas de que
+                            contiene. segun configuracion</p>
+                        <div class="opcu-en-tracking-lista-mercaderia">
+                            <div class="opcu-en-tracking-lista-mercaderia-item"></div>
+                        </div>
+
+                        <div class="on-page-en-tracking-lista-scroll">
+                            <div class="on-page-en-tracking-lista-inerscroll"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="opcu-en-tracking-desplegar-seccion">
+                        <p>Desplegar lista de en tracking</p>
+                    </div>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <%- include( '../partials/footer' ) %>
+    </footer>
+
+</body>
+
+</html>

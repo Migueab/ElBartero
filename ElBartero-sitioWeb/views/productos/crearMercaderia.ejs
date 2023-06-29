@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%-include('../partials/head',{title})%>
+</head>
+<body>
+    <header>
+        <%- include('../partials/header')  %>
+    </header>
+    <main class="main">
+        <section class="seccion-uno">
+            <h2>Creacion de mercaderia</h2>
+            <ul>
+                <ul>
+                    <% errors.forEach(elemento=>{ %>
+    
+                       <li class="on-page-crear-mercaderia"> <%= elemento.msg%></li>
+    
+                        <%});%>
+    
+                </ul>
+            </ul>
+
+        <form action="/mercadousuariosmercaderias" method="post" enctype="multipart/form-data">
+            <label for="">Nombre</label>
+            <input type="text" name="title" id="">
+            <br>
+            <label for="">Descripcion</label>
+            <input type="text" name="description" id="">
+            <br>
+            <label for="">Año aproximado</label>
+            <input type="number" name="" id="" min="1900" max="2099" placeholder="2023">
+            <br>
+            <p>Categoria de mercado inicial:</p>
+            <select name="categoria de mercado" id="">
+                <option></option>
+                <option value="oro">Oro</option>
+                <option value="plata">Plata</option>
+                <option value="bornce">Bronce</option>
+                <option value="imparcial">Imparcial</option>
+            </select>
+            <br>
+            <label for="">Precio</label>
+            <input type="number" name="price" id="">
+            <br>
+            <br>
+            <p>Mercaderia para:</p>
+            <label for="mercaderiaVenta">Venta</label>
+            <input type="checkbox" name="razoncomercial" id="mercaderiaVenta">
+            <label for="mercaderiaintercambio">Intercambio</label>
+            <input type="checkbox" name="razoncomercial" id="mercaderiaintercambio">
+            <br>
+            <p>Esta mercaderia admite</p>
+            <select name="actividadescomercialesadmitidas" id="">
+                <option value="Todas las opciones" selected>Todas las opciones</option>
+                <option value="venta">Venta</option>
+                <option value="balanza">Negociacion</option>
+                <option value="balanza">Negociacion en balanza</option>
+                <option value="subasta">Negociacion en subasta</option>
+                <option value="subasta">Valoracion por parte de usuarios</option>
+            </select>
+            <br>
+            <p>Estado de la mercaderia</p>
+            <select name="estadodelamercaderia" id="">
+                <option></option>
+                <option value="nuevo">Nuevo</option>
+                <option value="perfecto">Perfecto</option>
+                <option value="bueno">Bueno</option>
+                <option value="regular">Regular</option>
+                <option value="malo">Malo</option>
+            </select>
+            <br>
+            <label for="img">Subir Foto</label>
+            <input type="file" name="img" id="img" accept=".jpeg, .jpg , .png">
+            <br>
+            <textarea name="Comentariomercaderia" id="" cols="30" rows="4" maxlength="150">Escribir un comentario</textarea>
+            <br>
+            <label for="">Enviar mercaderia al mercado de usuarios</label>
+            <input type="checkbox" name="Cargarmercaderiaalmercadodeusuarios" id="" checked>
+            <p>*La mercaderia se cargara en el almacen.</p>
+            <input type="submit">
+        </form>
+        </section>
+    </main>
+        <footer>
+            <%- include('../partials/footer')  %>
+        </footer>
+</body>
+</html>

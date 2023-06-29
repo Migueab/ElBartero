@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include ( '../partials/head', {title} ) %>
+ 
+    </head>
+
+<body>
+    <header>
+    
+        <%- include( '../partials/header') %>
+    
+        </header>
+
+    <main class="main">
+
+            <section class="on-page-seccion-mercaderia-en-exhibicion">
+                <article class="opme-caracteristicas-article">
+
+                    <div class="opme-caracteristicas-nombre">
+                      Nombre: <p><%= mercaderiasMarcas.title %></p> 
+                    </div>
+                    <div class="opme-caracteristicas-fotos">
+                        <h4 class="opme-caracteristicas-fotos-titular"></h4>
+
+                        <img width="100%" src="<%=mercaderiasMarcas.img%>" alt="Imagen">
+                         
+                    </div>
+                    <div class="opme-caracteristicas-info">
+                        <h4 class="opme-caracteristicas-info-titular">
+                            <p><%= mercaderiasMarcas.price%></p>
+                        </h4>
+                    </div>
+                    <div class="opme-caracteristicas-opciones">
+
+                        <button class="opme-boton-de-compra" type="button" onclick="location.href='/<%=mercaderiasMarcas.id%>/comprarmercaderia';">Comprar</button>
+                        <button class="opme-boton-interes" type="button">Cargar en el almacen</button>
+                    </div>
+                    <div>
+                        <form action="/mercaderiaenexhibiciondetalle/<%=mercaderiasMarcas.id%>/delete?_method=delete" method="post">
+                        <input type="submit" value="Eliminar esta mercaderia">
+                        </form>
+                        <a href="/mercaderiaenexhibiciondetalle/<%=mercaderiasMarcas.id%>/update">
+                        <button>Modificar mercaderia</button></a>
+                    </div>
+                </article>
+
+            </section>
+    </main>
+
+    <footer>
+        <%- include( '../partials/footer') %>
+        </footer>
+</body>
+
+</html>

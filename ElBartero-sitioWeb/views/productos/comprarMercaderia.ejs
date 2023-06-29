@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head', {title}) %>
+</head>
+<body>
+    <header>
+        <%- include ('../partials/header') %>
+    </header>
+    <section class="seccion-uno-comprar-mercaderia">
+        <article class="on-page-comprar-mercaderia">
+
+            <div class="opcompmerc-mercaderia">
+                Foto
+                <img src="<%= mercaderia.img? mercaderia.img:'' %>" alt="Imagen">
+                <img src="<%= mercaderiasMarcas.img? mercaderiasMarcas.img:'' %>" alt="">
+
+                <p><%= mercaderia.title %></p>
+                <p><%= mercaderiasMarcas.title %></p>
+            </div>
+            <div class="opcompmerc-subtotal">
+                <p class="opcompmerc-subtotal-texto">Subtotal</p>
+                <div class="opcompmerc-subtotal-numero"></div>
+            </div>
+            <div class="opcompmerc-condiciones-compra-venta">
+                <p class="opcompmerc-texto">Al realizar transacciones en la compra-venta de procutos se cargara un porcentaje de comision al total de la compra.</p>
+                <a href="/terminosycondiciones">Ver Terminos y condiciones</a>
+            </div>
+            <div class="opcompmerc-informacion">
+                <div class="opcompmerc-datos-usuario">
+                <label for="comprar-mercaderia-seleccionada">Utilizar datos del usuario para la compra</label>
+                <input type="checkbox" name="comprar-mercaderia-seleccionada" id="comprar-mercaderia-seleccionada">
+                </div>
+                <div class="opcompmerc-datos-transporte">
+                    <label for="comprar-mercaderia-agregar-transporte">Agregar transporte</label>
+                    <input type="radio" name="comprar-mercaderia-transporte" id="comprar-mercaderia-agregar-transporte">
+                </div>
+                <div class="opcompmerc-transporte-independiente">
+                    <div class="opcompmerc-texto">
+                    <label for="comprar-mercaderia-transporte-independiente">Llevarlo o Retirarlo por cuenta propia</label>
+                    <input type="radio" name="comprar-mercaderia-transporte" id="comprar-mercaderia-transporte-independiente">
+                    </div>
+                    <p class="opcompmerc-transporte-independiente-texto">De llevar la mercaderia por cuenta propia me hago cargo de las clausulas a cumplimentar.</p>
+                    <div class="opcompmerc-texto">
+                    <label for="condiciones-transporte-independiente">Acepto terminos y condiciones</label>
+                    <input type="checkbox" name="condiciones-transporte-independiente" id="condiciones-transporte-independiente">
+                    </div>
+                    <a href="/transporte">Ver terminos y condiciones</a>
+                </div>
+                </div>
+            </div>
+                <div class="opcompmerc-datos-tarjeta">
+                    <p class="opcompmerc-datos-tarjeta-texto">Tu metodo de pago</p>
+
+                    <div>
+                    <form action="" method="POST">
+                        <select name="compra-tarjetas" class="opcompmerc-datos-tarjetas-select">
+                            <option>Tarjeta de credito o debito</option>
+                            <option value="credito">Credito</option>
+                            <option value="debito">Debito</option>
+                        </select>
+                        <div class="opcompmerc-form">
+                        <label for="compra-tarjeta-asignacion-datos">Numero de tarjeta:</label>
+                        <input type="number" name="compra-tarjeta-asignacion-datos" id="compra-tarjeta-asignacion-datos">
+                        </div>
+                        <div class="opcompmerc-form">
+                        <label for="compra-tarjeta-asignacion-numero">Ingrese el pin</label>
+                        <input type="password" name="compra-tarjeta-asignacion-numero" id="compra-tarjeta-asignacion-numero">
+                        </div>
+                        <div class="opcompmerc-form">
+                        <label for="">Mes y año de vencimiento:</label>
+                        <input type="month" name="" value="YY-MM" min="2023-06" max="2030-12">
+                        </div>
+                        <div class="opcompmerc-form">
+                            <label for="compra-titular-nombre">Nombre del titular:</label>
+                            <input type="text" name="compra-titular-nombre" id="compra-titular-nombre">
+                        </div>
+                        <div class="opcompmerc-form">
+                            <label for="compra-titular-apellido">Apellido del titular:</label>
+                            <input type="text" name="compra-titular-apellido" id="compra-titular-apellido">
+                        </div>
+                        <div class="opcompmerc-form">
+                            <label for="compra-titular-codigo-postal">Codigo postal:</label>
+                            <input type="text" name="compra-titular-codigo-postal" id="compra-titular-codigo-postal">
+                        </div>
+                        <div class="opcompmerc-form">
+                            <label for="compra-titular-pais">Pais/Region</label>
+                            <input type="text" name="compra-titular-pais" id="compra-titular-pais">
+                        </div>
+
+                    </form>
+                    </div>
+                </div>
+            </div>
+            <div class="opcompmerc-boton-compra">
+                <button type="submit" class="opcompmerc-boton">Comprar</button>
+            </div>
+
+
+        </article>
+        
+    </section>
+
+    <footer>
+        <%- include ('../partials/footer') %>
+    </footer>
+</body>
+</html>

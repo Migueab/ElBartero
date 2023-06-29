@@ -1,0 +1,42 @@
+[
+    {
+        "title": "Heladera",
+        "price": 340000,
+        "description": "",
+        "year": "",
+        "img": "/uploadImages/imagenesmercaderiasmarcas/1686367552855-Heladera.jpeg",
+        "id": 2
+    },
+    {
+        "title": "Heladera",
+        "price": 450000,
+        "description": "",
+        "year": "",
+        "img": "/uploadImages/imagenesmercaderiasmarcas/1686368474777-1465361_01.jpg",
+        "id": 3
+    },
+    {
+        "title": "Cafetera",
+        "price": 80000,
+        "description": "Super teconologica",
+        "year": "",
+        "img": "/uploadImages/imagenesmercaderiasmarcas/1686700382353-274509-300-300.png",
+        "id": 5
+    },
+    {
+        "title": "Tostadora",
+        "price": 85000,
+        "description": "Excelente producto!",
+        "year": "2020",
+        "img": "/uploadImages/imagenesmercaderiasmarcas/1686765265310-descarga.jpeg",
+        "id": 6
+    },
+    {
+        "title": "Licuadora",
+        "price": 50000,
+        "description": "Super teconologica",
+        "year": "2021",
+        "img": "/uploadImages/imagenesmercaderiasmarcas/1687911595390-Licuadora.jpeg",
+        "id": 7
+    }
+]

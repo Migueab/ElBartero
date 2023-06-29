@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include ( '../partials/head' ) %>
+    <title> <%= title %></title>
+    </head>
+
+<body>
+    <header>
+    
+        <%- include( '../partials/header') %>
+    
+        </header>
+
+    <main class="main">
+
+        <section class="seccion-uno-canasta">
+
+            <article class="on-page-canasta-listas-guardadas">
+                <p>Canastas guardadas</p>
+                <i class="fa-solid fa-caret-down"></i>
+            </article>
+
+            <article class="on-page-canasta-listas-guardadas">
+                <p>Instructivo Canasta</p>
+            </article>
+
+            <article class="opcan-comando">
+
+                <div class="opcan-nombre">
+                    <p>La canasta</p>
+                    <p>Nombre de la canasta</p>
+                </div>
+          
+
+            </article>
+
+        </section>
+
+        <section class="seccion-dos-canasta">
+
+            <article class="opcan-canasta">
+
+                <div class="opcan-canasta-izq-der">
+
+                    <div class="opcan-comando-icono">
+                        <img class="opcan-comando-icono-canasta" src="/images/Canasta.png">
+                    </div>
+                    <img class="imagen-logo-sinNombre" src="/images/Logo-sinNombre-06.png">
+                    <div class="opcan-comando-canasta-imagen">
+                        <div class="opcan-comando-canasta-imagen-file"></div>
+                    </div>
+        
+                </div>
+
+                <div class="opcan-canasta-configuracion">
+                    <div class="opcan-canasta-informacion">
+                        <p class="opcan-titulo">Informacion</p>
+                        <div class="opcan-canasta-informacion-uno"> 
+                            <p>Fecha de inicio de actividades</p>
+                            <p>Tiempo de vida util de la mercaderia</p>
+                            <div>Primera valoracion</div>
+                            <textarea name="" id="" cols="20" rows="2">Escribe un comentario</textarea>
+                        </div>
+                        <div class="opcan-canasta-informacion-dos">
+                            <label for="bien-de-intercambio">Bien para el intercambio</label>
+                            <input type="checkbox" name="bien-de-intercambio" id="bien-de-intercambio">
+                            <label for="bien-para-venta">Bien para la venta</label>
+                            <input type="checkbox" name="bien-para-venta" id="bien-para-venta">                            
+                            
+                        </div>
+                    </div>
+                    <div class="opcan-canasta-valoracion">
+                        <p class="opcan-titulo">Valorar</p>
+                        <div class="opcan-canasta-valoracion-uno"> 
+
+                        </div>
+                        <div class="opcan-canasta-valoracion-dos">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="opcan-canasta-listado-mercaderias">
+                    <p>Listado de mercaderias en canasta</p>
+                    <div class="opcan-canasta-vistualizacion-segun">
+                    <p >Visualizar como</p>
+                    <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                    <div class="opcan-canasta-listado-mercaderias-items">
+                        <div class="opcan-canasta-listado-items">Item1</div>
+                        <div class="opcan-canasta-listado-items">Item1</div>
+                        <div class="opcan-canasta-listado-items">Item1</div>
+                    </div>
+                    <div class="opcan-canasta-desplegar">Desplegar listado de mercaderias en canasta</div>
+                </div>
+                
+            </article>
+            
+        </section>
+        <section class="seccion-tres-canasta">
+
+                <article class="opcan-mercaderia">
+                    <div class="opcan-mercaderia-item">
+                       <p class="opcan-titulo">Mercaderia seleccionada</p>
+                        <div class="opcan-mercaderia-item-seleccionado"></div>
+                    </div>
+
+                    <div class="opcan-mercaderia-configuracion">
+                        <div class="opcan-mercaderia-informacion"></div>
+                        <div class="opcan-mercaderia-valoracion"></div>
+                    </div>
+                </article>
+        </section>
+    </main>
+
+        <footer>
+            <%- include( '../partials/footer') %>
+            </footer>
+</body>
+</html>

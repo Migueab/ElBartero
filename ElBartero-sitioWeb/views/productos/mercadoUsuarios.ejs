@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include ( '../partials/head' , {title} ) %>
+   
+</head>
+
+<body>
+    <header>
+
+        <%- include( '../partials/header' ) %>
+
+    </header>
+
+    <main class="main">
+
+        <section class="seccion-uno">
+
+            <article class="on-page-mercado-usuarios">
+                <h4 class="opmu-titulo-primero">Mercado de Usuarios</h4>
+                <div class="opmu-acceder-mercado">
+                <a class="opmu-titulo-segundo" href="/mercadousuariosmercaderias">Acceder al mercado</a>
+                <a href="/mercadousuariosmercaderias"><i class="fa-solid fa-right-long"></i></a>
+                </div>
+                <div class="opmu-cateogrias">
+                    <a class="opmu-categoria-oro" href="/mercadousuariosoro">
+                        <p>Oro</p>
+                    </a>
+                    <a class="opmu-categoria-plata" href="/mercadousuariosplata">
+                        <p>Plata</p>
+                    </a>
+                    <a class="opmu-categoria-bronce" href="/mercadousuariosbronce">
+                        <p>Bronce</p>
+                    </a>
+                </div>
+
+                <div class="ompu-buscador">
+                    <div class="ompu-categorias-filtro-buscador">
+                        <p class="opmu-titulo-primero">Filtro</p>
+                        <div class="opmu-categorias-filtro-opciones">
+                            <div class="opmu-categoria-filtro-opciones-oro">
+                                <label for="mercado-usuarios-oro">Oro</label>
+                                <input type="checkbox" name="mercado-usuarios-filtro" id="mercado-usuarios-oro">
+                            </div>
+                            <div class="opmu-categoria-filtro-opciones-plata">
+                                <label for="mercado-usuarios-plata">Plata</label>
+                                <input type="checkbox" name="mercado-usuarios-filtro" id="mercado-usuarios-plata">
+                            </div>
+                            <div class="opmu-categoria-filtro-opciones-bronce">
+                                <label for="mercado-usuarios-bonce">Bronce</label>
+                                <input type="checkbox" name="mercado-usuarios-filtro" id="mercado-usuarios-bronce">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="opmu-input-label">
+                        <label for="mercado-usuarios">Buscar en el mercado de usuarios</label>
+                        <input class="input-search-mercado-usuarios" type="search" name="mercado-usuarios">
+                    </div>
+
+                </div>
+
+            </article>
+
+        </section>
+
+        <section class="seccion-dos">
+
+            <article class="buscar-por-categoria-on-page-usuarios">
+
+                <h4 class="opmu-titulares-article">Buscar por categorias</h4>
+                <div class="on-page-usuarios-on-article-categorias">
+                    <div class="opmu-buscar-categorias-iconos">
+                        <i class="fa-solid fa-laptop"></i>
+                        <i class="fa-solid fa-mobile-button"></i>
+                        <i class="fa-regular fa-washing-machine"></i>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+
+        <section class="seccion-tres">
+
+            <article class="on-page-usuarios-ofertas">
+                <h4 class="opmu-titulares-article">Ofertas del dia</h4>
+
+                <div class="opmu-muestra-mercaderia-f1-c1">
+
+                    <%mercaderia.forEach( elemento=>{ %>
+
+                        <% if(elemento.id===1){%>
+
+                            <div class="opmu-muestra-foto">
+                                <img class="opmu-muestra-mercaderia-foto" src="<%=  elemento.img  %>" alt="">
+                                <div class="opmu-muestra-datos">
+                                    <p class="opmu-muestra-titulo">
+                                        <%= elemento.title %>
+                                    </p>
+                                    <p class="opmu-muestra-precio">
+                                        <%= elemento.price %>
+                                    </p>
+                                    <%};%>
+                                    <% });%>
+                                </div>    
+                            </div>
+                            <div class="opmu-muestra-mercaderia-choosewindow">
+
+                                <button class="opmu-boton-ver" type="button"
+                                    onclick="location.href='/mercaderiausuariosdetalle';">Ver</button>
+
+                                <button class="opmu-boton-a-valoracion" type="button">Valorar</button>
+                                <button class="opmu-boton-al-almacen" type="button">Cargar al almacen</button>
+                                <button class="opmu-boton-a-negociacion" type="button">Iniciar negociacion</button>
+                                <button class="opmu-boton-compra" type="button" type="button"
+                                    onclick="location.href='/comprarmercaderia';">Comprar</button>
+
+                            </div>
+                </div>
+
+                <div class="opmu-productos-en-muestra-primera-fila"></div>
+                <div class="opmu-productos-en-muestra-segunda-fila"></div>
+                <div class="opmu-productos-en-muestra-segunda-fila"></div>
+            </article>
+
+        </section>
+        <section class="seccion-cuatro">
+            <article class="on-usuarios-ofertas">
+                <h4 class="opmu-titulares-article"> Ofertas </h4>
+                <div class="opmu-productos-en-muestra-primera-fila"></div>
+                <div class="opmu-productos-en-muestra-primera-fila"></div>
+                <div class="opmu-productos-en-muestra-segunda-fila"></div>
+                <div class="opmu-productos-en-muestra-segunda-fila"></div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <%- include( '../partials/footer' ) %>
+    </footer>
+</body>
+
+</html>

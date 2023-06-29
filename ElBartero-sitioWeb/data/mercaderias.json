@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "title": "TostadoraXX",
+        "price": "33434",
+        "img": "No sube"
+    },
+    {
+        "id": 2,
+        "title": "TostadoraX",
+        "price": "60500",
+        "img": "cafetera_espresso_yelmo_ce_5107_19_bar_1200w.jpeg"
+    },
+    {
+        "id": 3,
+        "title": "Heladera",
+        "price": "352000",
+        "img": "/uploadImages/imagenesmercaderias/1686368446500-Heladera.jpeg"
+    },
+    {
+        "title": "Tostadora",
+        "description": "",
+        "categoria de mercado": "",
+        "price": 33344,
+        "actividadescomercialesadmitidas": "Todas las opciones",
+        "estadodelamercaderia": "",
+        "Comentariomercaderia": "Escribir un comentario",
+        "Cargarmercaderiaalmercadodeusuarios": "on",
+        "img": "/uploadImages/imagenesmercaderias/1686367529443-descarga.jpeg",
+        "id": 4
+    },
+    {
+        "title": "Heladera",
+        "description": "",
+        "categoria de mercado": "",
+        "price": 350000,
+        "actividadescomercialesadmitidas": "Todas las opciones",
+        "estadodelamercaderia": "",
+        "Comentariomercaderia": "Escribir un comentario",
+        "Cargarmercaderiaalmercadodeusuarios": "on",
+        "img": "/uploadImages/imagenesmercaderias/1686368431253-drean-heladera-hdr-400f11s-cfreezer-396lt-plateada.png",
+        "id": 5
+    },
+    {
+        "title": "TostadoraX",
+        "description": "Super teconologica",
+        "categoria de mercado": "oro",
+        "price": 65000,
+        "razoncomercial": "on",
+        "actividadescomercialesadmitidas": "Todas las opciones",
+        "estadodelamercaderia": "nuevo",
+        "Comentariomercaderia": "Increible producto!",
+        "Cargarmercaderiaalmercadodeusuarios": "on",
+        "img": "/uploadImages/imagenesmercaderias/1686513774910-descarga.jpeg",
+        "id": 6
+    }
+]

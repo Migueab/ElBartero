@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include ( '../partials/head', { title } ) %>
+       
+</head>
+
+<body>
+    <header>
+
+        <%- include( '../partials/header' ) %>
+
+    </header>
+
+    <main class="main">
+
+        <section class="on-page-seccion-mercaderia-en-exhibicion-usuarios">
+
+            <article class="opmeu-caracteristicas-article">
+
+                <div class="opmeu-caracteristicas-nombre">
+                    <p>
+                        <%= mercaderia.title %>
+                    </p>
+
+                </div>
+                <div class="opmeu-caracteristicas-fotos">
+                    <h4 class="opmeu-caracteristicas-fotos-titular">
+                        <img width="100px" src="<%=mercaderia.img%>" alt="Imagen">
+                    </h4>
+                </div>
+
+                <div class="opmeu-caracteristicas-info">
+                    <h4 class="opmeu-caracteristicas-info-titular">
+                        Descripcion
+                    </h4>
+                </div>
+
+                <div class="opmeu-caracteristicas-opciones">
+
+                    <button class="opmeu-boton-de-valoracion" type="button">Valorar</button>
+                    <button class="opmeu-boton-interes" type="button">Cargar en el almacen</button>
+
+                    <button class="opmeu-boton-de-negociacion" type="button">Iniciar negociacion</button>
+
+                    <button class="opmeu-boton-de-compra" type="button" onclick="location.href='/<%=mercaderia.id%>/comprarmercaderia';">Comprar</button>
+                </div>
+                <div class="opmeu-opciones-edicion">
+                    <form action="/mercaderiausuariosdetalle/<%= mercaderia.id %>/delete?_method=delete" method="post">
+                        <input type="submit" class="opmeu-boton-eliminar" value="Eliminar esta mercaderia">
+                    </form>
+                    <a href="/mercaderiausuariosdetalle/<%= mercaderia.id %>/update">
+                    <button>Modificar mercaderia</button></a>
+                </div>
+
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <%- include( '../partials/footer' ) %>
+    </footer>
+
+</body>
+
+</html>
