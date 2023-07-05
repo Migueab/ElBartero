@@ -74,9 +74,11 @@ const model={
 
         users[index] = {
 
+            ...user,
             email: users[index].email,
-            title: newData.title,
-
+            name: newData.name,
+            birthdate: newData.birthdate,
+            phonenumber:newData.phonenumber
         }
 
         const usersJSON =JSON.stringify(users);

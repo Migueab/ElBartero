@@ -1,89 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <%-include('../partials/head',{title})%>
 </head>
+
 <body>
     <header>
-        <%- include('../partials/header')  %>
+        <%- include('../partials/header') %>
     </header>
     <main class="main">
-        <section class="seccion-uno">
+        <section class="seccion-uno-create-mercaderia">
+           
+            <article class="opcm-article">
+
             <h2>Creacion de mercaderia</h2>
             <ul>
                 <ul>
                     <% errors.forEach(elemento=>{ %>
-    
-                       <li class="on-page-crear-mercaderia"> <%= elemento.msg%></li>
-    
+
+                        <li class="on-page-crear-mercaderia">
+                            <%= elemento.msg%>
+                        </li>
+
                         <%});%>
-    
+
                 </ul>
             </ul>
 
-        <form action="/mercadousuariosmercaderias" method="post" enctype="multipart/form-data">
-            <label for="">Nombre</label>
-            <input type="text" name="title" id="">
-            <br>
-            <label for="">Descripcion</label>
-            <input type="text" name="description" id="">
-            <br>
-            <label for="">Año aproximado</label>
-            <input type="number" name="" id="" min="1900" max="2099" placeholder="2023">
-            <br>
-            <p>Categoria de mercado inicial:</p>
-            <select name="categoria de mercado" id="">
-                <option></option>
-                <option value="oro">Oro</option>
-                <option value="plata">Plata</option>
-                <option value="bornce">Bronce</option>
-                <option value="imparcial">Imparcial</option>
-            </select>
-            <br>
-            <label for="">Precio</label>
-            <input type="number" name="price" id="">
-            <br>
-            <br>
-            <p>Mercaderia para:</p>
-            <label for="mercaderiaVenta">Venta</label>
-            <input type="checkbox" name="razoncomercial" id="mercaderiaVenta">
-            <label for="mercaderiaintercambio">Intercambio</label>
-            <input type="checkbox" name="razoncomercial" id="mercaderiaintercambio">
-            <br>
-            <p>Esta mercaderia admite</p>
-            <select name="actividadescomercialesadmitidas" id="">
-                <option value="Todas las opciones" selected>Todas las opciones</option>
-                <option value="venta">Venta</option>
-                <option value="balanza">Negociacion</option>
-                <option value="balanza">Negociacion en balanza</option>
-                <option value="subasta">Negociacion en subasta</option>
-                <option value="subasta">Valoracion por parte de usuarios</option>
-            </select>
-            <br>
-            <p>Estado de la mercaderia</p>
-            <select name="estadodelamercaderia" id="">
-                <option></option>
-                <option value="nuevo">Nuevo</option>
-                <option value="perfecto">Perfecto</option>
-                <option value="bueno">Bueno</option>
-                <option value="regular">Regular</option>
-                <option value="malo">Malo</option>
-            </select>
-            <br>
-            <label for="img">Subir Foto</label>
-            <input type="file" name="img" id="img" accept=".jpeg, .jpg , .png">
-            <br>
-            <textarea name="Comentariomercaderia" id="" cols="30" rows="4" maxlength="150">Escribir un comentario</textarea>
-            <br>
-            <label for="">Enviar mercaderia al mercado de usuarios</label>
-            <input type="checkbox" name="Cargarmercaderiaalmercadodeusuarios" id="" checked>
-            <p>*La mercaderia se cargara en el almacen.</p>
-            <input type="submit">
-        </form>
+                <form action="/mercadousuariosmercaderias" method="post" enctype="multipart/form-data" class="opcm-form">
+                    <div class="opcm-info-single">
+                        <label for="title" class="opcm-info-labels">Nombre</label>
+                        <input type="text" name="title" id="title" class="opcm-info-inputs">
+                    </div>
+                    <div class="opcm-info-single">
+                        <label for="description" class="opcm-info-labels">Descripcion breve:</label>
+                        <input type="text" name="description" id="description" class="opcm-info-inputs">
+                    </div>
+                    <div class="opcm-info-single">
+                        <label for="year" class="opcm-info-labels">Año aproximado</label>
+                        <input type="number" name="year" id="year" min="1900" max="2099" placeholder="2023" class="opcm-info-inputs">
+                    </div>
+                    <div class="opcm-info-single">
+                        <p class="opcm-info-labels">Categoria de mercado inicial:</p>
+                        <select name="categoriademercado" id="categoriademercado" class="opcm-info-inputs">
+                            <option></option>
+                            <option value="oro">Oro</option>
+                            <option value="plata">Plata</option>
+                            <option value="bornce">Bronce</option>
+                            <option value="imparcial">Imparcial</option>
+                        </select>
+                    </div>
+                    <div class="opcm-info-single">
+                        <label for="price" class="opcm-info-labels">Precio</label>
+                        <input type="number" name="price" id="price" class="opcm-info-inputs">
+                    </div>
+                    <div class="opcm-info-single">
+                        <p class="opcm-info-labels">Mercaderia para:</p>
+                        <div>
+                            <label for="mercaderiaVenta" class="opcm-info-labels">Venta</label>
+                            <input type="checkbox" name="razoncomercial" id="mercaderiaVenta" class="opcm-info-inputs">
+                        </div>
+                        <div>
+                            <label for="mercaderiaintercambio" class="opcm-info-labels">Intercambio</label>
+                            <input type="checkbox" name="razoncomercial" id="mercaderiaintercambio" class="opcm-info-inputs">
+                        </div>
+                    </div>
+                    <div class="opcm-info-single">
+                        <p class="opcm-info-labels">Esta mercaderia admite:</p>
+                        <select name="actividadescomercialesadmitidas" id="actividadescomercialesadmitidas">
+                            <option value="Todas las opciones" selected>Todas las opciones</option>
+                            <option value="venta">Venta</option>
+                            <option value="balanza">Negociacion</option>
+                            <option value="balanza">Negociacion en balanza</option>
+                            <option value="subasta">Negociacion en subasta</option>
+                            <option value="subasta">Valoracion por parte de usuarios</option>
+                        </select>
+                    </div>
+                    <div class="opcm-info-single">
+                        <p class="opcm-info-labels">Estado de la mercaderia:</p>
+                        <select name="estadodelamercaderia" id="estadodelamercaderia" class="opcm-info-inputs">
+                            <option></option>
+                            <option value="nuevo">Nuevo</option>
+                            <option value="perfecto">Perfecto</option>
+                            <option value="bueno">Bueno</option>
+                            <option value="regular">Regular</option>
+                            <option value="malo">Malo</option>
+                        </select>
+                    </div>
+                    <div class="opcm-info-single">
+                        <label for="img" class="opcm-info-labels">Subir Foto</label>
+                        <input type="file" name="img" id="img" accept=".jpeg, .jpg , .png">
+                    </div>
+                    <div class="opcm-info-single">
+                        <textarea name="comentariomercaderia" id="" cols="30" rows="4"
+                            maxlength="150">Escribir un comentario</textarea>
+                    </div>
+                    <div class="opcm-info-single">
+                        <label for="">Enviar mercaderia al mercado de usuarios</label>
+                        <input type="checkbox" name="Cargarmercaderiaalmercadodeusuarios" id="" checked class="opcm-info-inputs-checkbox-enviarmercaderia">
+                        <p>*La mercaderia se cargara en el almacen.</p>
+                    </div>
+                    <div class="opcm-info-single">
+                        <button type="submit" class="opcm-button"> Crear mercaderia</button>
+                    </div>
+                </form>
+            </article>
         </section>
     </main>
-        <footer>
-            <%- include('../partials/footer')  %>
-        </footer>
+    <footer>
+        <%- include('../partials/footer') %>
+    </footer>
 </body>
+
 </html>

@@ -54,7 +54,7 @@ router.get ( '/useracount' ,authMiddleware , userController.getUserAcount );
 
 router.get ( '/editarperfil' ,authMiddleware , userController.getEditUserProfile );
 
-router.put ( '/editarperfil' ,authMiddleware , userController.upDateUserProfile );
+router.put ( '/editarperfil/:user/update' ,authMiddleware , userController.upDateUserProfile );
 
 
 //@get /useracountmarcas

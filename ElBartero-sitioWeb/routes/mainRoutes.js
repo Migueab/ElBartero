@@ -28,6 +28,7 @@ router.get ( '/canasta' , controlador.getCanasta );
 router.get ( '/piedepagina' , controlador.getSmallFooter );
 
 
+router.get ( '/enproceso' , controlador.getInProgress );
 
 
 module.exports = router;

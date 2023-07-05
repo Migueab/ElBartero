@@ -23,9 +23,19 @@
                 <div class="opcu-cuadro-usuario-uno">
 
                     <div class="opcu-user-imagen">
-                        <i class="fa-regular fa-circle-user"></i>
-                   <!--      <label for=""></label>
-                        <input type="file"> -->
+
+                        <div class="opcu-user-img-show">
+                            <% if (user.img) {%>
+                                <%= user.img %>
+                            <% } else{%>
+                                <i class="fa-regular fa-circle-user"></i>
+                            <% }%>
+                        </div>
+                        <div class="opcu-user-img-update">
+                            <label for="img" class="opcu-user-img-label"></label>
+                            <input type="file" name="img" id="img" class="opcu-user-img-input">
+                        </div>
+
                     </div>
                     
                     <div class="opcu-user-nombre">
@@ -96,9 +106,13 @@
 
                 </div>
 
-                <div class="opcu-cuadro-usuario-tres">
-                    <a href="/crearmercaderia" class="opcu-opciones-listado-configuracion">Crear una nueva mercaderia</a>
-                    <a href="/editarperfil" class="opcu-opciones-listado-configuracion">Editar pefil del usuario</a>
+                <div class="opcu-cuadro-usuario-tres">  
+                    <div class="opcu-cuadro-usuario-tres-listado">
+                        <a href="/crearmercaderia" class="opcu-opciones-listado-configuracion">Crear una nueva mercaderia</a>
+                        <a href="/editarperfil" class="opcu-opciones-listado-configuracion">Editar pefil del usuario</a>
+                        <a href="" class="opcu-opciones-listado-configuracion">Agregar cuentas bancarias</a>
+                        <a href="" class="opcu-opciones-listado-configuracion">Ampliar almacen, nuevo almacen</a>
+                    </div>
                 </div>
 
 

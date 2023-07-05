@@ -12,14 +12,58 @@
     <main>
         <section class="seccion-uno">
         <form action="/mercaderiausuariosdetalle/<%=mercaderia.id%>/update?_method=put" method="post">
-            <label for="">Nombre:</label>
-            <input type="text" name="title" value="<%= mercaderia.title %>">
-            <label for="">Precio:</label>
-            <input type="number" name="price" value="<%= mercaderia.price %>">
-            <label for="img">Imagen</label>
-            <input type="file" name="img" value="<%=mercaderia.img%>" accept=".jpg , .png">
-            
-            <input type="submit" value="Guardar cambios">
+           <div>
+               <label for="title">Nombre:</label>
+               <input type="text" name="title" value="<%= mercaderia.title %>">
+           </div>
+           <div>
+               <label for="price">Precio:</label>
+               <input type="number" name="price" value="<%= mercaderia.price %>">
+           </div>
+           <div>
+               <label for="description">Descripcion breve:</label>
+               <input type="text" name="description" value="<%= mercaderia.description %>">
+           </div>
+           <div>
+            <p>Mercaderia para:</p>
+            <label for="mercaderiaVenta">Venta</label>
+            <input type="checkbox" name="razoncomercial" id="mercaderiaVenta">
+            <label for="mercaderiaintercambio">Intercambio</label>
+            <input type="checkbox" name="razoncomercial" id="mercaderiaintercambio">
+           </div>
+           <div>
+           <p>Esta mercaderia admite</p>
+           <select name="actividadescomercialesadmitidas" id="actividadescomercialesadmitidas">
+               <option value="Todas las opciones" selected>Todas las opciones</option>
+               <option value="venta">Venta</option>
+               <option value="balanza">Negociacion</option>
+               <option value="balanza">Negociacion en balanza</option>
+               <option value="subasta">Negociacion en subasta</option>
+               <option value="subasta">Valoracion por parte de usuarios</option>
+           </select>
+           </div>
+           <div>
+            <p>Estado de la mercaderia</p>
+           <select name="estadodelamercaderia" id="estadodelamercaderia">
+               <option></option>
+               <option value="nuevo">Nuevo</option>
+               <option value="perfecto">Perfecto</option>
+               <option value="bueno">Bueno</option>
+               <option value="regular">Regular</option>
+               <option value="malo">Malo</option>
+           </select>
+           </div>
+           <div>
+           <textarea name="comentariomercaderia" id="comentariomercaderia" cols="30" rows="4" maxlength="150">Escribir un comentario</textarea>
+           </div>
+           <div>
+               <label for="img">Imagen</label>
+               <input type="file" name="img" value="" accept=".jpg , .png">
+           </div>
+           <div>
+               <input type="submit" value="Guardar cambios">
+           </div>
+
         </form>
     </section>
     </main>

@@ -47,7 +47,6 @@ app.use(cookieParser());
 
 
 
-
 /*  Registro de rutas del sitio del usuario */
 /* app.use((req,res,next)=>{
 

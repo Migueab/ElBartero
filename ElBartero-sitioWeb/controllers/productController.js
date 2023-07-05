@@ -154,7 +154,7 @@ const productController = {
     getMercadoUsuariosMercaderias : ( req , res ) =>{
 
         const mercaderia = mercaderiasModel.findAll();
-        
+
         res.render ( 'mercadoUsuariosUno' , { 
             title : 'Mercado de Usuarios' , 
             mercaderia 
@@ -165,7 +165,9 @@ const productController = {
    
     /* Donde estaran las mercaderias de los usuarios */
     /* Mercado de usuarios Merado de oro */
+
     getMercadoUsuariosOro : ( req,res)=>{
+
 
         res.render ('mercadoUsuariosOro' , { 
             title : 'Mercado de oro'});
@@ -247,10 +249,10 @@ const productController = {
         res.redirect( '/mercadousuariosmercaderias');
 
     },
-
     
     /* Creacion desde la cuenta usuarios */
     /* Envia a mercado de usuarios, formulario */
+
     postMercaderiaUsuariosMercaderias: (req,res)=>{
         
         const newMercaderia = req.body;
@@ -288,9 +290,9 @@ const productController = {
     /* Comprar mercaderia, igual usuarios o comercios */
     getComprarMercaderia : ( req,res)=>{
 
-       /*  const mercaderiasMarcas = mercaderiasMarcasModel.findById();
-        const mercaderia = mercaderiasModel.findById();
- */
+        /* const mercaderiasMarcas = mercaderiasMarcasModel.findById();
+        const mercaderia = mercaderiasModel.findById(); */
+
         res.render ('comprarMercaderia' , { 
             title : 'Compra' , 
             mercaderiasMarcas , 

@@ -63,10 +63,12 @@ body{
     display: flex;
     flex-wrap: wrap;
     width: 100vw;
-    height: 80vh;
+    height: 200px;
     max-height: 250px;
-    padding: 5vw;
-    background-color: rgb(255, 184, 52);
+    padding: 20px 20px;
+ /*    background-color: rgb(255, 184, 52); */
+ background: linear-gradient(360deg,orange,rgb(240, 74, 74));
+   /*  background-color: rgb(255, 157, 0); */
     box-sizing: border-box;
     border-bottom: solid 5px black;
     flex-direction: row;
@@ -79,11 +81,16 @@ body{
 .logo-ElBartero{
     
     width: 20vw;
-    max-width: 100px;
+    max-width: 40px;
+    border: solid 2px rgb(255, 132, 0);
+    background-color: rgb(255, 132, 0);
+    border-radius: 5px;
+    margin-top: 5px;
     position: absolute;
     top: 1%;
     left: 1%;
     box-sizing: border-box;
+    z-index: 1;
 
 }
 
@@ -165,22 +172,19 @@ body{
     flex-wrap: wrap;
     flex-direction: column;
     box-sizing: border-box;
-    width: 25vw;
-    height: 50vh;
-    margin: 1%;
-    padding: 1%;
+    width: 100px;
+    height: 110px;
+    margin: 10px;
+    padding: 10px;
     /* background-color: aqua; */
     background-color: rgb(255, 98, 0);
-    border-radius: 8px;
-    max-width: 100px;
-    max-height: 170px;
+    border-radius: 5px;
     justify-content: center;
     align-items: center;
     order: 1;
     position: absolute;
     right: 10px;
-    top: 15px;
-    margin-bottom: 12px;
+    top: 10px;
 
 }
 
@@ -247,8 +251,7 @@ body{
     flex-wrap: wrap;
     background-color: orange;
     width: 100vw;
-    height: 400px;
-    min-height: 600px;
+    height: 300px;
     box-sizing: border-box;
     flex-direction: column;
     justify-content: center;
@@ -266,7 +269,7 @@ body{
     box-sizing: border-box;
     flex-direction: column;
     width: 100vw;
-    height: 800px;
+    height: 600px;
     padding: 2%;
     position: relative;
 
@@ -280,7 +283,7 @@ body{
     flex-direction: column;
     background-color: orange;
     width: 100vw;
-    height: 100vh;
+    height: 300px;
     padding: 2%;
     position: relative;
 
@@ -429,95 +432,31 @@ body{
 /* on page home - Seccion dos. categorias. */
 
 
-h4 {
-    text-align: center;
-    font-size: xx-large;
-    padding: 2%;
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: 30px;
-}
-
-/* contiene las imagenes */
-
-.cards-list {
+.opindex-article-categorias{
 
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    width: 50%;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.op-index-title{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    height: 50px;
+    width: 100%;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    z-index: 0;
-}
-
-.card-uno , .card-dos , .card-tres , .card-cuatro{
-
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    width: 20%;
-
 }
 
 
-.card_image {
-    
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    width: 100%;
-    border-radius: 20px;
-    object-fit: cover;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
-
-}
-
-
-.title-black {
-
-    color: black;
-
-}
-
-.card_title {
-            
-    text-align: center;
-    border-radius: 0px 0px 40px 40px;
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: 80%;
-    margin-top: -20%;
-    height: 40px;
-    width: 100%;
-    
-}
-
-
-.card-uno , .card-dos , .card-tres , .card-cuatro   {
-    
-    margin: 30px auto;
-    width: 20%;
-    height: 20%;
-    border-radius: 40px;
-    box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
-    cursor: pointer;
-    transition: 0.4s;
-    
-}
-
-
-.card-uno:hover ,.card-dos:hover , .card-tres:hover , .card-cuatro:hover {
-
-    transform: scale(0.9, 0.9);
-    box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
-        -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
-
-    }
-    
     
 
 
@@ -527,6 +466,22 @@ h4 {
 
 /* Mercado de Usuarios : Abre body */
 
+
+.seccion-uno-mercado-usuarios{
+
+    display: flex;
+    flex-wrap: wrap;
+    background-color: orange;
+    width: 100vw;
+    height: 800px;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    position: relative;
+
+}
 
 .on-page-mercado-usuarios{
 
@@ -547,11 +502,14 @@ h4 {
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    height: 10%;
+    height: 100px;
     width: 100%;
     flex-grow: .3;
     font-size: 28px;
+    background-color: gold;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
 
 }
 
@@ -561,8 +519,8 @@ h4 {
     flex-wrap: wrap;
     box-sizing: border-box;
     width: 90%;
-    height: 80px;
-    border-bottom: solid 5px gray;
+    height: 30px;
+    margin: 50px 0px;
     flex-direction: row;
     justify-content:center;
     align-items: center;
@@ -574,12 +532,14 @@ h4 {
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    width: 100px;
-    height: 50%;
+    width: 180px;
+    height: 100%;
     flex-grow: .3;
-    font-size: 28px;
+    font-size: 22px;
     text-decoration: none;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
 
 }
 
@@ -588,8 +548,8 @@ h4 {
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    height: 30%;
-    width: 90%;
+    height: 200px;
+    width: 100%;
     border: solid 2px gray;
     justify-content: space-around;
     align-items: center;
@@ -605,6 +565,9 @@ h4 {
     box-sizing: border-box;
     width: 90%;
     height: 30%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
 
 }
 
@@ -631,6 +594,7 @@ h4 {
     box-sizing: border-box;
     height: 60%;
     width: 25%;
+    margin: 0px 5px;
     border: solid 2px black;
     flex-grow: .30;
     justify-content: center;
@@ -649,6 +613,7 @@ h4 {
     box-sizing: border-box;
     height: 60%;
     width: 25%;
+    margin: 0px 5px;
     border: solid 2px black;
     flex-grow: .30;
     justify-content: center;
@@ -660,6 +625,7 @@ h4 {
     text-decoration: none;
 }
 
+
 .opmu-categoria-bronce{
 
     display: flex;
@@ -667,6 +633,7 @@ h4 {
     box-sizing: border-box;
     height: 60%;
     width: 25%;
+    margin: 0px 5px;
     border: solid 2px black;
     flex-grow: .30;
     justify-content: center;
@@ -684,7 +651,7 @@ h4 {
     flex-wrap: wrap;
     box-sizing: border-box;
     width: 100%;
-    height: 50%;
+    height: 100%;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -758,42 +725,6 @@ h4 {
     border-radius: 2%;
 }
 
-.opmu-titulares-article{
-
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 20px;
-    width: 100%;   
-    height: 15px;
-    order: -1;
-    flex-grow: .1;
-}
-
-.on-page-usuarios-on-article-categorias{
-
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 2%;
-    background-color:rgb(17, 202, 202);
-    border-radius: 10px;
-    width: 100%;
-    height: 80%;
-
-}
-
-.opmu-buscar-categorias-iconos{
-
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    width: 80%;
-    height: 10%;
-    flex-direction: row;
-}
 
 .on-page-usuarios-ofertas{
 
@@ -803,7 +734,7 @@ h4 {
     width: 100%;
     height: 100%;
     padding: 2%;    
-    background-color: whitesmoke;
+    background-color: rgb(231, 54, 54);
     border-radius: 2%;
     flex-direction: row;
     justify-content: space-around;
@@ -811,57 +742,17 @@ h4 {
 
 }
 
-.opmu-muestra-mercaderia-f1-c1{
 
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    width: 400px;
-    height: 80%;
-    font-size: 12px;
-    padding: 10px;
-    background-color: gainsboro;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    border: solid 2px gray;
-    border-radius: 10px;
+.opmu-titulares-article {
 
-
-}
-
-.opmu-muestra-foto{
-
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    width: 50%;
-    height: 100%;
-    border: solid 1px gray;
-    border-radius: 10px;
-    background-color: white;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    position: relative;
-}
-.opmu-muestra-datos{
-
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
     width: 100%;
-    height: 20%;
+    height: 50px;
+    text-align: center;
+    font-size: 16px;
     padding: 2%;
-    font-size: 18px;
+    font-family: sans-serif;
     font-weight: bold;
-    color: rgb(255, 95, 2);
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    position: absolute;
-    bottom: 0px;
-
+  
 }
 
 
@@ -876,59 +767,35 @@ h4 {
     order: 0;
 }
 
-.opmu-muestra-titulo , .opmu-muestra-precio{
-
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    width: 100%;
-}
 
 
-.opmu-muestra-mercaderia-choosewindow{
-
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    width: 40%;
-    height: 100%;
-    border: solid 1px gray;
-    border-radius: 10px;
-    padding: 1%;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
-
-/* Botones choosewindow */
-
-.opmu-boton-ver, .opmu-boton-a-valoracion , .opmu-boton-al-almacen, .opmu-boton-a-negociacion, .opmu-boton-compra{
-
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    width: 100%;
-    height: 15%;
-    border: solid 2px orange;
-    border-radius: 10px;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    color: black;
-    background-color: orange;
-}
-
-
-
-
+/* Mercado de Usuarios : Cierra body */
+/* Mercado de Usuarios : Cierra body */
 /* Mercado de Usuarios : Cierra body */
 
 
 /* Mercado de comercios: ABRE BODY  */
+/* Mercado de comercios: ABRE BODY  */
+/* Mercado de comercios: ABRE BODY  */
+/* Mercado de comercios: ABRE BODY  */
 
 /* article. buscar por categoria - seccion dos */
+
+.seccion-uno-mercado-comercial{
+
+    display: flex;
+    flex-wrap: wrap;
+    background-color: orange;
+    width: 100vw;
+    height: 800px;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    position: relative;
+}
+
 
 .on-page-mercado-comercios{
 
@@ -988,7 +855,7 @@ h4 {
     flex-wrap: wrap;
     box-sizing: border-box;
     width: 90%;
-    height: 50%;
+    height: 100px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -1053,7 +920,7 @@ h4 {
     flex-direction: row;
 }
 
-.fa-laptop, .fa-mobile-button , .fa-washing-machine{
+.fa-laptop, .fa-mobile-button , .fa-shirt , .fa-glasses , .fa-hat-cowboy , .fa-socks{
 
     display: flex;
     flex-wrap: wrap;
@@ -1064,7 +931,7 @@ h4 {
     height: 80px;
     width: 80px;
     font-size: 30px;
-    background-color: rgb(123, 123, 213);
+    background-color: whitesmoke;
     justify-content: center;
     align-items: center;
     padding: 20px;
@@ -1160,7 +1027,7 @@ h4 {
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    width: 80%;
+    width: 10%;
     height: 10%;
     font-size: 100%;
     flex-direction: column;
@@ -1237,7 +1104,7 @@ h4 {
 /* cierra body mercado de comercios */
 
 
-/* on page : cuneta marcas : Abre Body */
+/* on page : cuneta usuario marcas : Abre Body */
 
 .seccion-uno-cuenta-marcas{
 
@@ -1245,14 +1112,29 @@ h4 {
     flex-wrap: wrap;
     background-color: orange;
     width: 100vw;
-    height: 40vh;
-    min-height: 300px;
+    height: 200px;
     box-sizing: border-box;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 2%;
     position: relative;
+}
+
+.seccion-dos-cuenta-marcas{
+
+    display: flex;
+    flex-wrap: wrap;
+    background-color: orange;
+    width: 100vw;
+    height: 500px;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    position: relative;
+
 }
 
 .on-page-cuenta-marcas-cuadro{
@@ -1263,8 +1145,8 @@ h4 {
     flex-direction: row;
     height: 100%;
     width: 95%;
-    border: solid 2px black;
-    background-color: gainsboro;
+    border: solid 2px rgb(192, 169, 218);
+    background: linear-gradient(90deg,rgb(192, 169, 218) 30%,rgb(147, 131, 209) 100%);
     border-radius: 10px;
     padding: 1%;
     justify-content: space-between;
@@ -1280,7 +1162,8 @@ h4 {
     box-sizing: border-box;
     width: 30%;
     height: 90%;
-    background-color: rgb(124, 124, 218);
+    /* background-color: rgb(124, 124, 218); */
+    background: linear-gradient(90deg,rgb(151, 74, 240) 30%,rgb(92, 63, 210) 100%);
     padding: 2%;
     margin-bottom: 5px;
     border: solid 2px rgb(89, 89, 221);
@@ -1326,7 +1209,7 @@ h4 {
     box-sizing: border-box;
     width: 30%;
     height: 90%;
-    background-color: rgb(124, 124, 218);
+    background: linear-gradient(90deg,rgb(151, 74, 240) 30%,rgb(92, 63, 210) 100%);
     padding: 2%;
     margin-bottom: 5px;
     border-radius: 10px;
@@ -1344,7 +1227,7 @@ h4 {
     box-sizing: border-box;
     width: 30%;
     height: 90%;
-    background-color: rgb(124, 124, 218);
+    background: linear-gradient(90deg,rgb(151, 74, 240) 30%,rgb(92, 63, 210) 100%);
     padding: 2%;
     border: solid 2px rgb(89, 89, 221);
     border-radius: 10px;
@@ -1352,12 +1235,235 @@ h4 {
     margin-bottom: 10px;
     justify-content: space-around;
     align-items: flex-start;
+    
+}
+
+.opcum-almacen{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    background-color: white;
+    width: 95vw;
+    height: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 2px gray;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+}
+
+.opcum-almacen-titular{
+
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    font-size: 14px;
+    width: 100%;
+    height: 25px;
+    padding: 2px 10px;
+    border: solid 1px black;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gainsboro;
+    border-radius: 10px;
+
+}
+
+.opcum-almacen-titulo{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 80%;
+    height: 20px;
+}
+
+.opcum-almacen-control{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 20%;
+    height: 20px;
+    padding: 1px;
+    font-size: 14px;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.opcum-almacen-lista{
+
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    font-size: 12px;
+    background-color: gainsboro;
+    padding: 10px;
+    width: 98%;
+    height: 85%;
+    border: solid 1px black;
+    border-radius: 10px;
+    order: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.opcum-almacen-lista-text{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    height: 20px;
+    margin: 2px;
+    padding: 2px;
+    border-bottom: solid 1px black;
+
+}
+
+.opcum-almacen-lista-mercaderia{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    height: 100px;
+    width: 95%;
+    background-color: beige;
+    margin: 2px;
+    padding: 2px;
+    margin-top: 20px;
+    border: solid 1px gray;
+    border-radius: 10px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.opcum-almacen-lista-mercaderia-item{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 15%;
+    height: 90%;
+    margin: 2px;
+    padding: 2px;
+    margin-left: 10px;
+    background-color: orange;
+    border: solid 1px gray;
+    border-radius: 5px;
+    position: absolute;
+    left: 0px;
+}
+
+.opcum-almacen-lista-info{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 25%;
+    height: 90%;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: absolute;
+    left: 22%;
+}
+
+.opcum-lista-info{
+
+    width: 100%;
 }
 
 
-/* on page : cuenta marcas : Cierra Body */
+.opcum-almacen-lista-opciones{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 0px 10px;
+    width: 50%;
+    height: 90%;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    right: 5px;
+}
+
+.opcum-lista-button-single{
+
+    font-size: 10px ;
+    width: 100%;
+    margin: 2px 0px;
+}
+
+.on-page-almacen-marcas-lista-scroll{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    height: 80%;
+    width: 2%;
+    margin: 2px;
+    margin-top: 30px;
+    background-color: gray;
+    border: solid 1px black;
+    border-radius: 5px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: absolute;
+    right: 10px;
+}
+
+.on-page-almacen-marcas-lista-inerscroll{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    background-color: orange;
+    width: 50%;
+    height: 80%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin: 2px;
+}
+
+.opcum-almacen-desplegar-seccion{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    font-size: 12px;
+    width: 100%;
+    height: 25px;
+    padding: 2px 10px;
+    border: solid 1px black;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: gainsboro;
+    border-radius: 10px;
+    order: 1;
+
+}
 
 
+/* on page : cuenta usuario marcas : Cierra Body */
+/* on page : cuenta usuario marcas : Cierra Body */
+/* on page : cuenta usuario marcas : Cierra Body */
+
+
+/* On page: Cuenta de usuario : Abre Body */
+/* On page: Cuenta de usuario : Abre Body */
 /* On page: Cuenta de usuario : Abre Body */
 
 .seccion-uno-cuenta-usuario{
@@ -1366,7 +1472,7 @@ h4 {
     flex-wrap: wrap;
     background-color: orange;
     width: 100vw;
-    height: 250px;
+    height: 350px;
     box-sizing: border-box;
     flex-direction: column;
     justify-content: center;
@@ -1450,11 +1556,26 @@ h4 {
 
 }
 
+.opcu-cuadro-usuario-tres-listado{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
 .opcu-opciones-listado-configuracion{
 
     font-size: 12px;
     text-decoration: none;
     font-weight: bold;
+    width: 90%;
+    padding: 2px 5px;
+    margin: 5px 0px;
+    background-color: rgb(245, 199, 60);
+    border-radius: 5px;
 }
 
 /* on page- cuenta de usuario , Hasta aca pirmera seccion , donde esta el cuadro del almacen , */
@@ -1469,8 +1590,12 @@ h4 {
     width: 90%;
     height: 20%;
     font-size: 12px;
+    padding: 5%;
     background-color: orange;
     border-radius: 5px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -1481,22 +1606,64 @@ h4 {
     box-sizing: border-box;
     width: 90%;
     height: 50%;
+    padding: 10px 0px;
     border-radius: 10px;
-    border: solid 5px orange;
-    flex-direction: row;
-    justify-content: center;
+    border: solid 10px orange;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .fa-circle-user{
 
-    font-size: 50px;
+    font-size: 100%;
     color:gold;
     padding: 5px;
     border: solid 2px orange;
     border-radius: 5px;
     background-color: orange;
 }
+
+.opcu-user-img-show{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.opcu-user-img-update{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 20%;
+    font-size: 10px;
+    background-color: gold;
+    position: absolute;
+    bottom: 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.opcu-user-img-label{
+    font-size: 80%;
+}
+.opcu-user-img-input{
+
+    display: flex;
+    font-size: 20%;
+   
+}
+
 
 .opcu-user-comentario{
 
@@ -1509,7 +1676,7 @@ h4 {
 .opcu-user-comentario-textarea{
 
     width: 100%;
-    height: 20%;
+    height: 30%;
     border-radius: 5px;
 }
 
@@ -1914,6 +2081,7 @@ h4 {
 }
 
 .opcu-almacen-lista-info{
+
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
@@ -1945,6 +2113,7 @@ h4 {
 }
 
 .opcu-lista-button-single{
+
     font-size: 10px ;
     width: 100%;
     margin: 2px 0px;
@@ -3950,7 +4119,13 @@ h4 {
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    padding: 10%;
+    width: 95%;
+    padding: 5%;
+    margin: 20px 0px;
+    background-color: gold;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -3980,6 +4155,10 @@ h4 {
     border: solid 2px gainsboro;
     box-shadow: 10px 5px 5px gray;
 
+}
+
+.on-page-mercado-comercial-uno-cart:hover{
+transform: scale(0.8, 0.8)
 }
 
 .opmc1-contiene-imagen{
@@ -4067,9 +4246,15 @@ h4 {
 
 .seccion-uno-opmu1{
 
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
     width: 100vw;
     height: 5000px;
     background-color: orange;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .opmu1-titulo{
@@ -4077,10 +4262,57 @@ h4 {
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    padding: 10%;
+    width: 95%;
+    padding: 50px;
+    margin: 20px 0px ;
+    background-color: gold;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+.opmu1-filter-bar{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 95%;
+    height: 50px;
+    font-size: 12px;
+    padding: 10px;
+    margin: 10px 0px;
+    background-color: whitesmoke;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.opmu1-filter-bar-left , .opmu1-filter-bar-right{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 50%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.opmu1-filter-bar-list{
+
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    font-size: 12px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.opmu1-filter-bar-list li a{
+
+    text-decoration: none;
 }
 
 .on-page-mercado-usuarios-uno-listado{
@@ -4584,13 +4816,68 @@ h4 {
 
 
 
-
-
-
 /* On page SIGN IN.USUARIOS. Cierra body */
 /* On page SIGN IN.USUARIOS. Cierra body */
 /* On page SIGN IN.USUARIOS. Cierra body */
 
+
+/* On page UPDATE PROFILE USER. ABRE body */
+/* On page UPDATE PROFILE USER. ABRE body */
+/* On page UPDATE PROFILE USER. ABRE body */
+
+.seccion-uno-editar-usuario{
+
+    
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 800px;
+    background: linear-gradient(150deg,orange,rgb(255, 136, 0));
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.opuup-register-form{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.opuup-form-single{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    margin: 10px 0px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.opuup-button-single{
+
+    width: 100%;
+    max-width: 200px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+
+
+
+/* On page UPDATE PROFILE USER. CIERRA body */
+/* On page UPDATE PROFILE USER. CIERRA body */
+/* On page UPDATE PROFILE USER. CIERRA body */
 
 
 /* La pagina de contacto cuenta con su propio tamaño de seccion */
@@ -5089,9 +5376,13 @@ h4 {
 }
 
 /* on page- cmbios y devoluciones Cierra body */
+/* on page- cmbios y devoluciones Cierra body */
+/* on page- cmbios y devoluciones Cierra body */
 
 /* La siguiente pagina, arrepentimiento de actividades cuenta con propia seccion uno y dos */
 
+/* on page- arrepentimiento de actividades -Abre body */
+/* on page- arrepentimiento de actividades -Abre body */
 /* on page- arrepentimiento de actividades -Abre body */
 
 .seccion-uno-arrepentimiento{
@@ -5380,8 +5671,12 @@ h4 {
 }
 
 /* on page- arrepentimiento de actividades -Cierra body */
+/* on page- arrepentimiento de actividades -Cierra body */
+/* on page- arrepentimiento de actividades -Cierra body */
 
 
+/* on page - politicas de privacidad Abre body */
+/* on page - politicas de privacidad Abre body */
 /* on page - politicas de privacidad Abre body */
 
 .seccion-uno-politicas-privacidad{
@@ -5432,8 +5727,12 @@ h4 {
 
 
 /* on page - politicas de privacidad Cierra body */
+/* on page - politicas de privacidad Cierra body */
+/* on page - politicas de privacidad Cierra body */
 
 
+/* on page - Terminos y condiciones Abre body */
+/* on page - Terminos y condiciones Abre body */
 /* on page - Terminos y condiciones Abre body */
 
 
@@ -5484,7 +5783,11 @@ h4 {
 }
 
 /* on page - Terminos y condiciones Cierra body */
+/* on page - Terminos y condiciones Cierra body */
+/* on page - Terminos y condiciones Cierra body */
 
+/* on page - Transporte Abre body */
+/* on page - Transporte Abre body */
 /* on page - Transporte Abre body */
 
 
@@ -5536,8 +5839,13 @@ h4 {
 
 
 /* on page - Transporte Cierra body */
+/* on page - Transporte Cierra body */
+/* on page - Transporte Cierra body */
 
 
+
+/* on page - preguntas frecuentes  Abre body*/
+/* on page - preguntas frecuentes  Abre body*/
 /* on page - preguntas frecuentes  Abre body*/
 
 .seccion-uno-preguntas{
@@ -5557,7 +5865,7 @@ h4 {
     flex-wrap: wrap;
     box-sizing: border-box;
     width: 100vw;
-    height: 30vh;
+    height: 30vh    ;
     min-height: 800px;
     padding: 5%;
 }
@@ -5618,7 +5926,11 @@ h4 {
 }
 
 /* on page - preguntas frecuentes  Cierra body*/
+/* on page - preguntas frecuentes  Cierra body*/
+/* on page - preguntas frecuentes  Cierra body*/
 
+/* on page - Contratacion Abre  body*/
+/* on page - Contratacion Abre  body*/
 /* on page - Contratacion Abre  body*/
 
 .seccion-uno-contratacion , .seccion-dos-contratacion {
@@ -5761,7 +6073,11 @@ h4 {
 }
 
 /* on page - Contratacion  Cierra body*/
+/* on page - Contratacion  Cierra body*/
+/* on page - Contratacion  Cierra body*/
 
+/* on page - blog de usuarios Abre body */
+/* on page - blog de usuarios Abre body */
 /* on page - blog de usuarios Abre body */
 
 .seccion-uno-blog {
@@ -5854,8 +6170,14 @@ h4 {
 
 
 /* on page - blog de usuarios Cierra body */
+/* on page - blog de usuarios Cierra body */
+/* on page - blog de usuarios Cierra body */
+/* on page - blog de usuarios Cierra body */
 
 
+/* on page  comprar mercaderia  abre body*/
+/* on page  comprar mercaderia  abre body*/
+/* on page  comprar mercaderia  abre body*/
 /* on page  comprar mercaderia  abre body*/
 
 .seccion-uno-comprar-mercaderia{
@@ -6101,14 +6423,40 @@ h4 {
 
 
 /* on page  comprar mercaderia  cierra body*/
+/* on page  comprar mercaderia  cierra body*/
+/* on page  comprar mercaderia  cierra body*/
 
 
 /* on page- crear mercaderia marcas AbreBody */
+/* on page- crear mercaderia marcas AbreBody */
+/* on page- crear mercaderia marcas AbreBody */
+
+.seccion-uno-crear-mercaderia-marcas{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    min-height: 800px;
+    padding: 5%;
+    background-color: orange;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 
 
-.op-crear-mercaderia-marca{
+}
 
-    color: red;
+.opcmm-article{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .on-page-crear-mercaderia-marca-formulario{
@@ -6122,18 +6470,138 @@ h4 {
     align-items: center;
 }
 
+.opcmm-info-single{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin: 20px 0px;
+    width: 300px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.opcmm-info-textarea{
+
+    width: 100%;
+}
+
+
+.op-crear-mercaderia-marca{
+
+    color: red;
+}    
+
+
+
+/* on page- crear mercaderia marcas Cierra Body */
+/* on page- crear mercaderia marcas Cierra Body */
 /* on page- crear mercaderia marcas Cierra Body */
 
 /* on page- crear mercaderia usuarios Abre Body */
+/* on page- crear mercaderia usuarios Abre Body */
+/* on page- crear mercaderia usuarios Abre Body */
+
+.seccion-uno-create-mercaderia{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    min-height: 2200px;
+    padding: 5%;
+    background-color: orange;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.opcm-article{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 80%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.opcm-form{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 90%;
+    max-width: 500px;
+    background-color: rgb(255, 225, 0);
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.opcm-info-single{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 80%;
+    max-width: 500px;
+    height: 100px;
+    margin-top: 30px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.opcm-info-inputs{
+
+    width: 100%;
+    max-width: 400px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.opcm-info-labels{
+
+    width: 100%;
+}
 
 .on-page-crear-mercaderia{
 
     color: red;
 }
+
+.opcm-button{
+
+    width: 100%;
+    max-width: 500px;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.opcm-info-inputs-checkbox-enviarmercaderia{
+
+    margin: 20px 0px;
+    width: 100px;
+    height: 30px;
+}
+
+/* on page- crear mercaderia usuariosCierra Body */
+/* on page- crear mercaderia usuariosCierra Body */
 /* on page- crear mercaderia usuariosCierra Body */
 
 
 
+/* on page- Small footer- abre body */
+/* on page- Small footer- abre body */
 /* on page- Small footer- abre body */
 
 
@@ -6170,6 +6638,124 @@ h4 {
 
 
 /* on page- Small footer- cierra body */
+/* on page- Small footer- cierra body */
+/* on page- Small footer- cierra body */
+
+
+
+/* PARTIALS ON CATEGORIAS   Abre Body*/
+/* PARTIALS ON CATEGORIAS   Abre Body*/
+/* PARTIALS ON CATEGORIAS   Abre Body*/
+/* PARTIALS ON CATEGORIAS   Abre Body*/
+
+
+
+.partials-on-article-categorias{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color:rgb(255, 132, 0);
+    border-radius: 10px;
+    padding: 20px;
+    width: 95vw;
+    height: 500px;
+
+}
+
+.partials-buscar-categorias-iconos{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.partials-buscar-categorias-iconos div{
+
+    background-color: gold;
+    border-radius: 10px;
+    margin: 10px 10px;
+    width: 100px;
+    height: 140px;;
+}
+
+
+.partials-buscar-categorias-iconos i {
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin: 10px 10px;
+    flex-direction: row;    
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+.partials-buscar-categorias-iconos p{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin: 10px 10px;
+    flex-direction: row;    
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* ESTAMOS TRABAJANDO EN EL STIO!! */
+/* ESTAMOS TRABAJANDO EN EL STIO!! */
+/* ESTAMOS TRABAJANDO EN EL STIO!! */
+
+.op-working-on{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    background-color: orange;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.on-working-on-title{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ESTAMOS TRABAJANDO EN EL STIO!! */
+/* ESTAMOS TRABAJANDO EN EL STIO!! */
+/* ESTAMOS TRABAJANDO EN EL STIO!! */
+
+
+/* PARTIALS ON CATEGORIAS   Cierra Body*/
+/* PARTIALS ON CATEGORIAS   Cierra Body*/
+/* PARTIALS ON CATEGORIAS   Cierra Body*/
+
+
 
 
 /*          FOOTER      0     */
@@ -6376,7 +6962,8 @@ h4 {
 
     .seccion-user{
         
-        height: 50vh;
+        width: 100px;
+        height: 120px;
         bottom: 20px;
     }
 
@@ -6393,7 +6980,7 @@ h4 {
 
 .seccion-uno {
 
-height: 40vh;
+height: 400px;
 
 }
 
@@ -6409,7 +6996,12 @@ height: 2000px;
 }
 
 /* cierra secciones */
+/* cierra secciones */
+/* cierra secciones */
 
+
+/* abre body home 480 */
+/* abre body home 480 */
 /* abre body home 480 */
 
 
@@ -6452,7 +7044,11 @@ height: 2000px;
 }
 
 /* cierra body home 480 */
+/* cierra body home 480 */
+/* cierra body home 480 */
 
+/* Abre  body mercado de comercios 480 */
+/* Abre  body mercado de comercios 480 */
 /* Abre  body mercado de comercios 480 */
 
 
@@ -6481,13 +7077,13 @@ height: 2000px;
 
 
 
-
-
-
-
+/* Cierra   body mercado de comercios 480 */
+/* Cierra   body mercado de comercios 480 */
 /* Cierra   body mercado de comercios 480 */
 
 
+/*  PAgina, Cuenta de usuario. Cuadro del almacen. Cuadro dos. Abre body */
+/*  PAgina, Cuenta de usuario. Cuadro del almacen. Cuadro dos. Abre body */
 /*  PAgina, Cuenta de usuario. Cuadro del almacen. Cuadro dos. Abre body */
 
 .opcu-iconos-choosewindow{
@@ -6500,8 +7096,31 @@ height: 2000px;
 
 
 /*  Cierra body : cuadro del almacen, cuadro dos. iconos y disponibilidad. Cierra*/
+/*  Cierra body : cuadro del almacen, cuadro dos. iconos y disponibilidad. Cierra*/
+/*  Cierra body : cuadro del almacen, cuadro dos. iconos y disponibilidad. Cierra*/
 
 
+/*  Abre body : CUENTA USUARIO MARCAS */
+/*  Abre body : CUENTA USUARIO MARCAS */
+/*  Abre body : CUENTA USUARIO MARCAS */
+
+
+.seccion-uno-cuenta-marcas{
+
+    height: 300px;
+  
+}
+
+.seccion-dos-cuenta-marcas{
+
+    height: 600px;
+
+}
+
+
+/*  Cierra body : CUENTA USUARIO MARCAS */
+/*  Cierra body : CUENTA USUARIO MARCAS */
+/*  Cierra body : CUENTA USUARIO MARCAS */
 
 /*  Abre body : MErcado comercial UNO - Mercado comercial UNO - 480 */
 /*  Abre body : MErcado comercial UNO - Mercado comercial UNO - 480 */
@@ -6529,6 +7148,7 @@ height: 2000px;
 /*  CIERRA body : MErcado comercial UNO - Mercado comercial UNO - 480*/
 /*  CIERRA body : MErcado comercial UNO - Mercado comercial UNO - 480*/
 /*  CIERRA body : MErcado comercial UNO - Mercado comercial UNO - 480*/
+
 
 /*  Abre body : MErcado USUARIOS UNO - Mercado Usuarios UNO - 480*/
 /*  Abre body : MErcado USUARIOS UNO - Mercado Usuarios UNO - 480*/
@@ -6614,6 +7234,17 @@ height: 2000px;
 /***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***/
 /***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***/
 /***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***/
+/***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***/
+/***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***/
+/***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***/
+/***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***/
+/***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***/
+/***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***/
+/***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***/
+/***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***/
+/***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***/
+/***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***/
+/***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***//***  769   ***/
 
 
 
@@ -6656,8 +7287,8 @@ height: 2000px;
     
 .balanza-icono{ 
 
-    top: 30px;
-    right: 75vw;
+    top: 50px;
+    right: 80vw;
 }
 
 
@@ -6670,14 +7301,14 @@ height: 2000px;
 
 .seccion-user{
 
+    display: flex;
     background-color: inherit;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: flex-start;
     width: 120px;
-    height: 200px;
+    height: 120px;
     max-width: 150px;
-
     
 }
 
@@ -6688,7 +7319,7 @@ height: 2000px;
     flex-direction: row;
     box-sizing: border-box;
     width: 100px;
-    height: 25%;
+    height: 40px;
     padding: 0px 5px;
     flex-grow: .33;
     justify-content: flex-start;
@@ -6745,9 +7376,6 @@ height: 2000px;
     color: white;
     position: relative;
 }
-
-
-
 
 
 
@@ -6863,7 +7491,9 @@ height: 2000px;
 
 
 
-
+/* cierra header 769 */
+/* cierra header 769 */
+/* cierra header 769 */
 /* cierra header 769 */
 
 
@@ -6893,13 +7523,11 @@ height: 2000px;
     /*       MAIN  769        */
 
 
-
-
     /* secciones del sitio */
 
     .seccion-uno{
 
-        height: 70vh;
+        height: 600px;
     }
 
     .seccion-footer{
@@ -6940,10 +7568,16 @@ height: 2000px;
 
 
     /* INDICE, index, Cierra body */
+    /* INDICE, index, Cierra body */
+    /* INDICE, index, Cierra body */
+    /* INDICE, index, Cierra body */
 
 
 
     /*  on page - cuadro de usuasrio - Cuadro del almacen. Abre body */
+    /*  on page - cuadro de usuasrio - Cuadro del almacen. Abre body */
+    /*  on page - cuadro de usuasrio - Cuadro del almacen. Abre body */
+
     /* figura unica imagen que desprende opciones */
 
     .opcu-iconos-choosewindow{
@@ -7047,6 +7681,31 @@ height: 2000px;
 
 }
 /* on page - cuenta del usuasrio - cierra body */
+/* on page - cuenta del usuasrio - cierra body */
+/* on page - cuenta del usuasrio - cierra body */
+/* on page - cuenta del usuasrio - cierra body */
+
+
+/* on page - cuenta del usuasrio MARCAS - Abre body */
+/* on page - cuenta del usuasrio MARCAS - Abre body */
+/* on page - cuenta del usuasrio MARCAS - Abre body */
+
+
+.seccion-uno-cuenta-marcas{
+
+    height: 400px;
+  
+}
+
+
+
+/* on page - cuenta del usuasrio MARCAS - Cierra body */
+/* on page - cuenta del usuasrio MARCAS - Cierra body */
+/* on page - cuenta del usuasrio MARCAS - Cierra body */
+
+
+
+
 
 /* On page, mercaderia exhibida , abre body*/
 
@@ -7130,6 +7789,11 @@ height: 2000px;
     height: 300px;
     flex-direction: row;
 
+}
+
+.on-page-mercado-usuarios-uno-cart:hover{
+
+    transform: scale(0.8,0.8);
 }
 
 
@@ -7343,6 +8007,20 @@ height: 2000px;
 /*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***/
 /*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***/
 /*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***/
+/*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***/
+/*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***/
+/*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***/
+/*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***/
+/*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***/
+/*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***/
+/*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***/
+/*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***/
+/*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***/
+/*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***/
+/*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***/
+/*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***/
+/*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***/
+/*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***//*** 1279   ***/
 
 
 
@@ -7396,6 +8074,9 @@ height: 2000px;
 
 
     /* ABRE BODY CUENTA DE USUARIO */
+    /* ABRE BODY CUENTA DE USUARIO */
+    /* ABRE BODY CUENTA DE USUARIO */
+    /* ABRE BODY CUENTA DE USUARIO */
 
     .seccion-uno-cuenta-usuario{
 
@@ -7405,9 +8086,27 @@ height: 2000px;
     }
 
 
-
-
     /* CIERRA BODY CUENTA DE USUARIO */
+    /* CIERRA BODY CUENTA DE USUARIO */
+    /* CIERRA BODY CUENTA DE USUARIO */
+    /* CIERRA BODY CUENTA DE USUARIO */
+
+    /* on page - cuenta del usuasrio MARCAS - Abre body */
+    /* on page - cuenta del usuasrio MARCAS - Abre body */
+    /* on page - cuenta del usuasrio MARCAS - Abre body */
+
+
+.seccion-uno-cuenta-marcas{
+
+    height: 500px;
+  
+}
+
+
+
+/* on page - cuenta del usuasrio MARCAS - Cierra body */
+/* on page - cuenta del usuasrio MARCAS - Cierra body */
+/* on page - cuenta del usuasrio MARCAS - Cierra body */
 
 
 

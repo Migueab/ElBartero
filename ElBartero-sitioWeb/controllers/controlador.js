@@ -44,6 +44,14 @@ const controlador= {
         res.render ( 'smallFooter' , { title : 'Pie de pagina'});
         
     },
+    
+    getInProgress : ( req , res ) =>{
+
+        res.render ( 'workingOn' , { title : 'Trabajando el sitio'});
+        
+    },
+
+
 
 }
 

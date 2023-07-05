@@ -33,9 +33,9 @@ userController={
                 values:req.body })
         } 
 
-        let usuariologin = usersModel.findByField('email', req.body.email);
+        let usuarioLogin = usersModel.findByField('email', req.body.email);
 
-        if(!usuariologin){
+        if(!usuarioLogin){
 
             return res.render('signIn' , { 
                 title: 'Sign in' , 
@@ -45,21 +45,22 @@ userController={
                 values:req.body });
         }
 
-        if(usuariologin){
+        if(usuarioLogin){
 
-            const passwordValido = bcryptjs.compareSync(req.body.password, usuariologin.password);
+            const passwordValido = bcryptjs.compareSync(req.body.password, usuarioLogin.password);
 
            if(passwordValido){
 
-            delete usuariologin.password;
-            delete usuariologin.id;
+            delete usuarioLogin.password;
+            delete usuarioLogin.id;
         
             if(req.body.rememberme){
 
-                res.cookie('email',usuariologin.email, {maxAge:(1000 *60)*60});
+            res.cookie('emailUser',usuarioLogin.email, {maxAge:(1000 *60)*60});
+               
             }
 
-            req.session.usuarioLogeado = usuariologin;
+            req.session.usuarioLogeado = usuarioLogin;
 
             return res.redirect('/useracount');
            };
@@ -289,9 +290,7 @@ userController={
 
     getEditUserProfile : ( req , res ) =>{
 
-       const userData = usersModel.findByPk(req.params.id)
-
-       console.log(userData)
+       const userData = usersModel.findByField('email',req.session.usuarioLogeado.email)
 
         res.render ( 'updateUserProfile', { 
             title : 'Editar perfil del usuario',
@@ -303,14 +302,12 @@ userController={
     },
 
     upDateUserProfile : ( req , res ) =>{
-
-        usersModel.updateByEmail( req.session.usuarioLogeado ,req.body)
-
-        res.render ( 'updateUserProfile', { 
-            title : 'Editar perfil del usuario',
-            user:req.session.usuarioLogeado
         
-        });
+        const datosUsuarioEditados = req.body;
+        
+        usersModel.updateByEmail( req.session.usuarioLogeado.email ,datosUsuarioEditados)
+
+        res.redirect('/useracount');
         
     },
 

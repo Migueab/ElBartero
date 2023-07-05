@@ -1,25 +1,6 @@
 [
     {
-        "name": "Oscar",
-        "surname": "Monomulo",
-        "email": "oscarmonumolo@gmail.com",
-        "password": "$2a$10$JdRJg91zXZZxHFL95dwp1uispAIwjd2Lh7jHVdtUSe6fzkwxXiTPC",
-        "confirmpassword": "$2a$10$1PoNsXQYgyQNMQQE6ltJHOXZNlPkncXh8pNAh4B3I2dwRWDRLhplW",
-        "birthdate": "",
-        "phonenumber": "",
-        "country": "",
-        "state": "",
-        "address": "",
-        "creditcard": "",
-        "creditcardowner": "",
-        "expirancy": "",
-        "bancacount": "",
-        "bancacountowner": "",
-        "bancexpirancy": "",
-        "id": "bea5a826-2eae-4a6f-8a15-bcb3e0c89fcb"
-    },
-    {
-        "name": "Agustin",
+        "name": "Agus",
         "surname": "Ramirez",
         "email": "agusramirez@hotmail.com",
         "password": "$2a$10$Fq4cN2sFNSD1XOMu3OJctuz.3NLGrcZHXPBzWSR8K4gmsAn9Sfhwa",
@@ -38,11 +19,11 @@
         "id": "71b51adc-f052-4d85-859a-2ea1701e842d"
     },
     {
-        "name": "Pedro",
-        "surname": "Gomez",
-        "email": "pedrogomez@hotmail.com",
-        "password": "$2a$10$tUCVt0ju7lw8b3HV5OLw2uGuCEvm8wJHiPWvwU2IQVbkBuVmL/aXq",
-        "confirmpassword": "$2a$10$NoxlAz/FGLR/XnDIu2FmI.0OQLB.p6YEWVelFpAUmQB3mf8cBGcqm",
+        "name": "OscarCito",
+        "surname": "Monomulo",
+        "email": "oscarmonumolo@gmail.com",
+        "password": "$2a$10$xXLMQX58hDIoHRDpj2bOVub5A0EPuFY6YLmT99GRiIZgkPPOFnEGy",
+        "confirmpassword": "$2a$10$BOsushqU0AEuHGtTj9Jy4uLE/sEidV9RHz25cIv2YFMPwVi7HdSjy",
         "birthdate": "",
         "phonenumber": "",
         "country": "",
@@ -54,6 +35,25 @@
         "bancacount": "",
         "bancacountowner": "",
         "bancexpirancy": "",
-        "id": "8970a52a-533a-4daa-9193-fd9f4cb12582"
+        "id": "6c34af12-5acf-49ea-bfe4-a0121187b186"
+    },
+    {
+        "name": "Pedrooooo",
+        "surname": "Gomez",
+        "email": "pedrogomez@hotmail.com",
+        "password": "$2a$10$kfO4lsHqv0Ynnq3zKvdcx.JjZVvVjBwLPJhRn9ymTb6GHLZOBZNUa",
+        "confirmpassword": "$2a$10$Lv4ZVDgpDdNpskFQWTI3Ve8pCMgKI7ZbadM1lqKDAZxSb.1pvGxem",
+        "birthdate": "",
+        "phonenumber": "1555555555",
+        "country": "",
+        "state": "",
+        "address": "",
+        "creditcard": "",
+        "creditcardowner": "",
+        "expirancy": "",
+        "bancacount": "",
+        "bancacountowner": "",
+        "bancexpirancy": "",
+        "id": "1e98a6c6-8c25-473b-8679-cd6bd5be5099"
     }
 ]

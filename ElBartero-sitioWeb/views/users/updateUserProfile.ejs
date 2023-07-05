@@ -19,60 +19,53 @@
         <%- include('../partials/header') %>
     </header>
     <main class="main">
+        <section class="seccion-uno-editar-usuario">
 
-        <form action='/editarperfil/<%= /* req.session.usuarioLogueado */ %>/update?_method=put' method="post" class="op-register-form">
-           
             <div>
-                <div class="opr-form-single">
-                    <label for="name" class="opr-labels">Nombre:</label>
-                    <input type="text" name="name" id="name" value="<%= /* userData.name */ %>" class="opr-inputs">
-                </div>
-                <div class="opr-form-single">
-                    <label for="surname" class="opr-labels">Apellido:</label>
-                    <input type="text" name="surname" id="surname" value="<%= values.surname %>" class="opr-inputs">
-                </div>
-                <div class="opr-form-single">
-                    <label for="email" class="opr-labels">Correo electronico:</label>
-                    <input type="email" name="email" id="email" value="<%= values.email %>" class="opr-inputs">
-                </div>
-                <div class="opr-form-single">
-                    <label for="password" class="opr-labels">Contraseña:</label>
-                    <input type="password" name="password" id="password" class="opr-inputs">
-                </div>
-                <div class="opr-form-single">
-                    <label for="confirmpassword" class="opr-labels">Confirmar contraseña:</label>
-                    <input type="password" name="confirmpassword" id="confirmpassword" class="opr-inputs">
-                </div>
-            </div>
-            <div>
-                <div class="opr-form-single">
-                    <label for="birthdate" class="opr-labels">Fecha de nacimiento:</label>
-                    <input type="date" name="birthdate" id="birthdate" class="opr-inputs">
-                </div>
-                <div class="opr-form-single">
-                    <label for="phonenumber" class="opr-labels">Telefono:</label>
-                    <input type="number" name="phonenumber" id="phonenumber" class="opr-inputs">
-                </div>
-                <div class="opr-form-single">
-                    <label for="country" class="opr-labels">Pais:</label>
-                    <input type="text" name="country" id="country" class="opr-inputs">
-                </div>
-                <div class="opr-form-single">
-                    <label for="state" class="opr-labels">Provincia:</label>
-                    <input type="text" name="state" id="state" class="opr-inputs">
-                </div>
-                <div class="opr-form-single">
-                    <label for="address" class="opr-labels">Direccion:</label>
-                    <input type="text" name="address" id="address" class="opr-inputs">
-                </div>
+                <h2>Editar perfil del usuario</h2>
             </div>
 
-            <div class="opr-button">
-                <button type="submit" class="opr-button-single">Enviar</button>
-            </div>
-        </form>
-
+            <form action='/editarperfil/<%= user%>/update?_method=put' method="post" class="opuup-register-form">
+               
+                <div>
+                    <div class="opuup-form-single">
+                        <label for="name" class="opr-labels">Nombre:</label>
+                        <input type="text" name="name" id="name" value="<%= userData.name %>" class="opr-inputs">
+                    </div>
+                    <div class="opuup-form-single">
+                        <label for="surname" class="opr-labels">Apellido:</label>
+                        <input type="text" name="surname" id="surname" value="<%= userData.surname %>" class="opr-inputs">
+                    </div>
+                </div>
+                <div>
+                    <div class="opuup-form-single">
+                        <label for="birthdate" class="opr-labels">Fecha de nacimiento:</label>
+                        <input type="date" name="birthdate" id="birthdate" class="opr-inputs">
+                    </div>
+                    <div class="opuup-form-single">
+                        <label for="phonenumber" class="opr-labels">Telefono:</label>
+                        <input type="number" name="phonenumber" id="phonenumber" class="opr-inputs">
+                    </div>
+                    <div class="opuup-form-single">
+                        <label for="country" class="opr-labels">Pais:</label>
+                        <input type="text" name="country" id="country" class="opr-inputs">
+                    </div>
+                    <div class="opuup-form-single">
+                        <label for="state" class="opr-labels">Provincia:</label>
+                        <input type="text" name="state" id="state" class="opr-inputs">
+                    </div>
+                    <div class="opuup-form-single">
+                        <label for="address" class="opr-labels">Direccion:</label>
+                        <input type="text" name="address" id="address" class="opr-inputs">
+                    </div>
+                </div>
+    
+                <div class="opr-button">
+                    <button type="submit" class="opuup-button-single">Enviar</button>
+                </div>
+            </form>
         </section>
+
     </main>
     <footer>
         <%- include('../partials/footer') %>

@@ -2,6 +2,7 @@
 const usersModel = require('../models/user.js');
 const usersMarcasModel = require('../models/userMarca.js')
 
+
 /* Este middleware sirve para diferenciar que muestra la barra de navegacion si el usuario se encuentra logueado */
 /* Contiene configuracion de cookies */
 
@@ -13,22 +14,23 @@ function userLoggedNavBarMiddleware(req,res,next){
 
     /* Users */
 
-    let emailInCookie = res.cookie.email;
+    /* let emailInCookie = req.cookies.email;
     let userFromCookie = usersModel.findByField('email',emailInCookie);
     
     if(userFromCookie){ 
         req.session.usuarioLogeado = userFromCookie;
-    }   
+    }    */
+
 
     /*  Users Marcas */
 
-    let emailMarcaInCookie = res.cookie.email;
+   /*  let emailMarcaInCookie = res.cookie.email;
     let userMarcaFromCookie = usersMarcasModel.findByField('email',emailMarcaInCookie);
     
     if(userMarcaFromCookie){ 
         req.session.usuarioMarcaLogeado = userMarcaFromCookie;
     }   
-
+ */
 
     /*  */
 
