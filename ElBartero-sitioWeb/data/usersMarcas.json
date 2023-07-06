@@ -1,1 +1,32 @@
-[{"name":"Supermarca","phonenumber":"1555555555","email":"supermarca@hotmail.com","password":"$2a$10$y.n.KByleNUCDrMmoiFazeu3f14HqePIIfAkGZbb/JPjmlP54llF.","confirmpassword":"$2a$10$b920DQREEOnTWiw/Hxe6weq.g5wUl1tvGVmdRdbH7PjeMyxnnCSg.","razonsocial":"","birthfoundation":"","address":"","postalcode":"","location":"","state":"","country":"","id":"99f92ca3-af21-4005-ab70-dd8d8b567acb"},{"name":"SupermarcaMil","phonenumber":"","email":"supermarcamil@hotmail.com","password":"$2a$10$FeKYAv6gJhBxgLWqXTmFEewKgvg4PwiZ5HNwd5Pe2mWJeB7jVW0i.","confirmpassword":"$2a$10$Zwolc8suw1DIlbuWmqBf.uAtRw29FuyX0wINhh5rLjVNWmD2PfKUe","razonsocial":"","birthfoundation":"","address":"","postalcode":"","location":"","state":"","country":"","id":"26623f0b-a42b-4d00-b05a-9929445bf330"}]
+[
+    {
+        "name": "Supermarca",
+        "phonenumber": "1555555555",
+        "email": "supermarca@hotmail.com",
+        "password": "$2a$10$y.n.KByleNUCDrMmoiFazeu3f14HqePIIfAkGZbb/JPjmlP54llF.",
+        "confirmpassword": "$2a$10$b920DQREEOnTWiw/Hxe6weq.g5wUl1tvGVmdRdbH7PjeMyxnnCSg.",
+        "razonsocial": "",
+        "birthfoundation": "",
+        "address": "",
+        "postalcode": "",
+        "location": "",
+        "state": "",
+        "country": "",
+        "id": "99f92ca3-af21-4005-ab70-dd8d8b567acb"
+    },
+    {
+        "name": "SupermarcaMil",
+        "phonenumber": "",
+        "email": "supermarcamil@hotmail.com",
+        "password": "$2a$10$FeKYAv6gJhBxgLWqXTmFEewKgvg4PwiZ5HNwd5Pe2mWJeB7jVW0i.",
+        "confirmpassword": "$2a$10$Zwolc8suw1DIlbuWmqBf.uAtRw29FuyX0wINhh5rLjVNWmD2PfKUe",
+        "razonsocial": "",
+        "birthfoundation": "",
+        "address": "",
+        "postalcode": "",
+        "location": "",
+        "state": "",
+        "country": "",
+        "id": "26623f0b-a42b-4d00-b05a-9929445bf330"
+    }
+]

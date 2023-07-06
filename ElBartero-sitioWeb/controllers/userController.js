@@ -56,9 +56,11 @@ userController={
         
             if(req.body.rememberme){
 
-            res.cookie('emailUser',usuarioLogin.email, {maxAge:(1000 *60)*60});
+            res.cookie('email',usuarioLogin.email, {maxAge:(1000 *60)*60});
                
             }
+
+            /* console.log(req.cookies.email) */
 
             req.session.usuarioLogeado = usuarioLogin;
 
@@ -311,6 +313,17 @@ userController={
         
     },
 
+    deleteUserProfile : ( req , res ) =>{
+        
+        const userData = usersModel.findByField('email', req.session.usuarioLogeado.email)
+
+        usersModel.deleteByPk(userData.id);
+
+        delete req.session.usuarioLogeado;
+    
+        res.redirect('/');
+        
+    },
 
 
     getUserAcountMarcas : ( req , res ) =>{

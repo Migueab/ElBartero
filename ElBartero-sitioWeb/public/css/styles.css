@@ -1857,6 +1857,24 @@ body{
 /* En el almacen */
 /* segunda seccion de cuenta usuarios */
 
+.seccion-dos-cuenta-usuario{
+
+    display: flex;
+    flex-wrap: wrap;
+    background-color: orange;
+    width: 100vw;
+    height: 350px;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    position: relative;
+
+}
+
+
+
 .opcu-almacen{
 
     display: flex;
@@ -1877,6 +1895,22 @@ body{
 
 /* Tercera seccion de cuenta usuarios  */
 
+.seccion-tres-cuenta-usuario{
+
+    display: flex;
+    flex-wrap: wrap;
+    background-color: orange;
+    width: 100vw;
+    height: 350px;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    position: relative;
+}
+
+
 .opcu-negociaciones{
 
     display: flex;
@@ -1896,6 +1930,21 @@ body{
 
 /* Cuarta seccion de cuenta usuarios */
 
+.seccion-cuatro-cuenta-usuario{
+
+    display: flex;
+    flex-wrap: wrap;
+    background-color: orange;
+    width: 100vw;
+    height: 1000px;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    position: relative;
+}
+
 .opcu-de-interes , .opcu-tracking{
 
     display: flex;
@@ -1903,7 +1952,7 @@ body{
     box-sizing: border-box;
     background-color: white;
     width: 95vw;
-    height: 95vh;
+    height: 45%;
     padding: 10px;
     margin-top: 20px;
     border-radius: 10px;
@@ -1949,7 +1998,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    width: 20%;
+    width: 10%;
     height: 20px;
     padding: 1px;
     font-size: 14px;
@@ -1965,13 +2014,14 @@ body{
     font-size: 12px;
     background-color: gainsboro;
     padding: 10px;
-    width: 98%;
-    height: 85%;
+    width: 100%;
+    height: 70%;
     border: solid 1px black;
     border-radius: 10px;
     order: 1;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: flex-start;
     position: relative;
 
 }
@@ -2001,10 +2051,14 @@ body{
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
+    width: 100%;
     height: 20px;
     margin: 2px;
     padding: 2px;
     border-bottom: solid 1px black;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .opcu-almacen-lista-mercaderia{
@@ -2012,19 +2066,17 @@ body{
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    height: 100px;
+    height: 50px;
     width: 95%;
     background-color: beige;
-    margin: 2px;
     padding: 2px;
-    margin-top: 20px;
-    border: solid 1px gray;
+    margin-top: 10px;
+    border: solid 2px gray;
     border-radius: 10px;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     position: relative;
-
 
 }
 
@@ -2068,15 +2120,17 @@ body{
     flex-wrap: wrap;
     box-sizing: border-box;
     width: 15%;
-    height: 90%;
+    height: 80%;
     margin: 2px;
     padding: 2px;
     margin-left: 10px;
     background-color: orange;
     border: solid 1px gray;
     border-radius: 5px;
-    position: absolute;
-    left: 0px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
 
 }
 
@@ -2085,38 +2139,86 @@ body{
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    width: 25%;
+    width: 20%;
     height: 90%;
     flex-direction: row;
-    justify-content: flex-start;
-    position: absolute;
-    left: 22%;
+    justify-content:center;
+    align-items: center;
+
 }
 
-.opcu-lista-info{
+.opcu-lista-info {
 
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
     width: 100%;
+    height: 80%;
+    font-size: 8px;
+    font-weight: bold;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
 }
+
+.opcu-almacen-lista-estado-mercaderia{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 20%;
+    height: 90%;
+    margin: 0px 5px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.opcu-almacen-lista-select{
+
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 0px 5px;
+    width: 100%;
+    height: 80%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
 
 .opcu-almacen-lista-opciones{
 
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    padding: 0px 10px;
-    width: 50%;
+    padding: 0px 5px;
+    width: 40%;
     height: 90%;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     position: absolute;
     right: 5px;
 }
 
 .opcu-lista-button-single{
 
-    font-size: 10px ;
-    width: 100%;
-    margin: 2px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    font-size: 8px ;
+    font-weight: bold;
+    width: 45%;
+    height: 80%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 
@@ -2156,7 +2258,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    width: 20%;
+    width: 10%;
     height: 20px;
     padding: 1px;
     font-size: 14px;
@@ -2173,8 +2275,8 @@ body{
     font-size: 12px;
     background-color: gainsboro;
     padding: 10px;
-    width: 95%;
-    height: 50%;
+    width: 100%;
+    height: 70%;
     border: solid 1px black;
     border-radius: 10px;
     order: 1;
@@ -2220,7 +2322,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    height: 100px;
+    height: 50px;
     width: 95%;
     background-color: beige;
     margin: 2px;
@@ -2356,7 +2458,7 @@ body{
     background-color: gainsboro;
     padding: 10px;
     width: 100%;
-    height: 60%;
+    height: 70%;
     border: solid 1px black;
     border-radius: 10px;
     order: 1;

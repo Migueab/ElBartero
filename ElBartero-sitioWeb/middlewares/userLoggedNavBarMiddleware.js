@@ -12,14 +12,18 @@ function userLoggedNavBarMiddleware(req,res,next){
     res.locals.isLogged =false;
     res.locals.isMarcaLogged = false;
 
+
     /* Users */
 
-    /* let emailInCookie = req.cookies.email;
-    let userFromCookie = usersModel.findByField('email',emailInCookie);
-    
-    if(userFromCookie){ 
-        req.session.usuarioLogeado = userFromCookie;
-    }    */
+        /* 
+        let emailInCookie = req.cookies.email;
+        let userFromCookie = usersModel.findByField('email',emailInCookie);
+        
+            if(userFromCookie){ 
+                req.session.usuarioLogeado = userFromCookie;
+            }  */  
+
+
 
 
     /*  Users Marcas */
